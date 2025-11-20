@@ -3,6 +3,7 @@
     "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,4 +15,3 @@
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "dist", ".next", "data"]
 }
-
