@@ -1,8 +1,8 @@
 {
-  "url": "https://creativegrowth.org/art/4071978",
+  "url": "https://creativegrowth.org/art/4087220",
   "status": 200,
-  "title": "Untitled, JK 14 by Jane Kassner | Creative Growth Art Center",
-  "timestamp": "2025-11-20T23:48:58.401Z",
+  "title": "WB 12 by Walter Baldwin | Creative Growth Art Center",
+  "timestamp": "2025-11-20T23:49:54.517Z",
   "metrics": {
     "violations": 2,
     "incomplete": 2,
@@ -127,42 +127,42 @@
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<h2 class=\"h3\"><span token=\"ARTIST_NAME\" data-heading=\"h3\"><span class=\"artwork__artist notranslate\">Jane Kassner</span></span></h2>",
+          "html": "<h2 class=\"h3\"><span token=\"ARTIST_NAME\" data-heading=\"h3\"><span class=\"artwork__artist notranslate\">Walter Baldwin</span></span></h2>",
           "target": [
             "h2"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<span token=\"TITLE\" data-heading=\"h2\"><span class=\"artwork__title notranslate\">Untitled, JK 14</span></span>",
+          "html": "<span token=\"TITLE\" data-heading=\"h2\"><span class=\"artwork__title notranslate\">WB 12</span></span>",
           "target": [
             "span[token=\"TITLE\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<span token=\"DATE\" data-heading=\"h2\"><span class=\"artwork__info__item__date\">, 2016</span></span>",
+          "html": "<span token=\"DATE\" data-heading=\"h2\"><span class=\"artwork__info__item__date\">, ND</span></span>",
           "target": [
             "span[token=\"DATE\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"MEDIUM\" data-heading=\"p\"><span class=\"artwork__info__item__medium\">Acrylic on magazine page</span></span></p>",
+          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"MEDIUM\" data-heading=\"p\"><span class=\"artwork__info__item__medium\">Watercolor and ink on paper</span></span></p>",
           "target": [
             ".cont--token > p:nth-child(3)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"DIMENSIONS\" data-heading=\"p\"><span class=\"artwork__info__item__dimensions\">17.25 x 12.25 in</span></span></p>",
+          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"DIMENSIONS\" data-heading=\"p\"><span class=\"artwork__info__item__dimensions\">11.25 x 12 in</span></span></p>",
           "target": [
             ".cont--token > p:nth-child(4)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<p class=\"p\"><span token=\"PRICE\" data-heading=\"p\"><span class=\"artwork__info__item__price\">$750</span></span></p>",
+          "html": "<p class=\"p\"><span token=\"PRICE\" data-heading=\"p\"><span class=\"artwork__info__item__price\">$125</span></span></p>",
           "target": [
             ".cont--token > p:nth-child(5)"
           ],
@@ -318,6 +318,13 @@
             "a[href=\"#\"]:nth-child(3) > .p.button-content > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"display: block;\">",
+          "target": [
+            ".artwork__notes > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
         },
         {
           "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">PURCHASE</span>",

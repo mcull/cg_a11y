@@ -1,10 +1,10 @@
 {
-  "url": "https://creativegrowth.org/post/16207-creative-growth-x-6397-featured-in-harpers-bazaar-cultured-and-artnet",
+  "url": "https://creativegrowth.org/art/4086662",
   "status": 200,
-  "title": "Creative Growth x 6397 Featured in Harpers Bazaar, Cultured, and ArtNet | Creative Growth Art Center",
-  "timestamp": "2025-11-20T23:40:30.921Z",
+  "title": "Untitled, JHi 1238 by John Hiltunen | Creative Growth Art Center",
+  "timestamp": "2025-11-20T23:48:24.821Z",
   "metrics": {
-    "violations": 3,
+    "violations": 2,
     "incomplete": 2,
     "passes": 31
   },
@@ -26,38 +26,6 @@
             "html"
           ],
           "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
-        }
-      ]
-    },
-    {
-      "kind": "violation",
-      "id": "link-name",
-      "impact": "serious",
-      "help": "Links must have discernible text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
-      "tags": [
-        "cat.name-role-value",
-        "wcag2a",
-        "wcag244",
-        "wcag412",
-        "section508",
-        "section508.22.a",
-        "TTv5",
-        "TT6.a",
-        "EN-301-549",
-        "EN-9.2.4.4",
-        "EN-9.4.1.2",
-        "ACT",
-        "RGAAv4",
-        "RGAA-6.2.1"
-      ],
-      "nodes": [
-        {
-          "html": "<a href=\"https://news.artnet.com/art-world/creative-growth-stella-ishii-outsider-art-fashion-show-2707120\" target=\"_blank\" style=\"display: block; max-height: 100%; max-width: 100%;\">",
-          "target": [
-            ".cont--kit__wrapper:nth-child(13) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .image__block.image2 > a[target=\"_blank\"]"
-          ],
-          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
         }
       ]
     },
@@ -91,42 +59,42 @@
         {
           "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">Artists</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(5) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(5) > .link-default.link-active.p"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">Exhibitions</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(6) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(6) > .link-default.link-active.p"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">News &amp; Events</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(7) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(7) > .link-default.link-active.p"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">Visit</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(8) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(8) > .link-default.link-active.p"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">Contact</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(9) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(9) > .link-default.link-active.p"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">ACCESSIBILITY</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(10) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(10) > .link-default.link-active.p"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
@@ -152,86 +120,58 @@
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%\">",
+          "html": "<div class=\"columns__col\" data-block-type=\"columns\" style=\"display:flex;flex:1;min-width:60%;position:relative;width:100%;flex-direction:column;max-width:60%;align-items:center\">",
           "target": [
-            "#mainContent > div > .cont--kit__wrapper:nth-child(1)"
+            "#mainContent > div > .cont--kit__wrapper:nth-child(1) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%\">",
+          "html": "<h2 class=\"h3\"><span token=\"ARTIST_NAME\" data-heading=\"h3\"><span class=\"artwork__artist notranslate\">John Hiltunen</span></span></h2>",
           "target": [
-            ".cont--kit__wrapper:nth-child(2)"
+            "h2"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
+          "html": "<span token=\"TITLE\" data-heading=\"h2\"><span class=\"artwork__title notranslate\">Untitled, JHi 1238</span></span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(4)"
+            "span[token=\"TITLE\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
+          "html": "<span token=\"DATE\" data-heading=\"h2\"><span class=\"artwork__info__item__date\">, ND</span></span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(6)"
+            "span[token=\"DATE\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"columns__col\" data-block-type=\"columns\" style=\"display:flex;flex:1;min-width:0;position:relative;width:100%;flex-direction:column;padding-right:10px;align-items:flex-start\">",
+          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"MEDIUM\" data-heading=\"p\"><span class=\"artwork__info__item__medium\">Collage on wood</span></span></p>",
           "target": [
-            ".cont--kit__wrapper:nth-child(7) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1)"
+            ".cont--token > p:nth-child(3)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"richText\" style=\"margin-bottom:10px;margin-top:10px\">",
+          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"DIMENSIONS\" data-heading=\"p\"><span class=\"artwork__info__item__dimensions\">3.50 x 8.50 x 1 in</span></span></p>",
           "target": [
-            ".cont--kit__wrapper:nth-child(7) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText"
+            ".cont--token > p:nth-child(4)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"h5\" style=\"text-align:center;\"><span style=\"color:rgba(255,255,255,1);font-weight:bold;\" data-heading=\"h5\">READ MORE</span></p></span>",
+          "html": "<p class=\"p\"><span token=\"PRICE\" data-heading=\"p\"><span class=\"artwork__info__item__price\">$400</span></span></p>",
           "target": [
-            ".cont--kit__wrapper:nth-child(7) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .btn--wrapper2 > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
+            ".cont--token > p:nth-child(5)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"columns__col\" data-block-type=\"columns\" style=\"display:flex;flex:1;min-width:0;position:relative;width:100%;flex-direction:column;padding-right:10px;align-items:flex-start\">",
+          "html": "<div class=\"image2 image__block\" style=\"display: block; font-size: 0px; line-height: 1; text-align: center; margin-bottom: 30px;\">",
           "target": [
-            ".cont--kit__wrapper:nth-child(10) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<div class=\"richText\" style=\"margin-bottom:10px;margin-top:10px\">",
-          "target": [
-            ".cont--kit__wrapper:nth-child(10) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"h5\" style=\"text-align:center;\"><span style=\"color:rgba(255,255,255,1);font-weight:bold;\" data-heading=\"h5\">READ MORE</span></p></span>",
-          "target": [
-            ".cont--kit__wrapper:nth-child(10) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .btn--wrapper2 > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<div class=\"richText\" style=\"margin-bottom:10px;margin-top:10px\">",
-          "target": [
-            ".cont--kit__wrapper:nth-child(13) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"h5\" style=\"text-align:center;\"><span style=\"color:rgba(255,255,255,1);font-weight:bold;\" data-heading=\"h5\">READ MORE</span></p></span>",
-          "target": [
-            ".cont--kit__wrapper:nth-child(13) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .btn--wrapper2 > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .image__block.image2"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
@@ -359,44 +299,16 @@
       ],
       "nodes": [
         {
-          "html": "<span style=\"display:inline-block;font-weight:bold;text-transform:uppercase;\" data-heading=\"h2\">HARPERS BAZAAR</span>",
+          "html": "<span data-heading=\"p\"><span class=\"i i-share\"></span>&nbsp;SHARE</span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(7) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText > div > .h2 > span[data-heading=\"h2\"]"
+            "a[href=\"#\"]:nth-child(2) > .p.button-content > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span style=\"display:inline-block;font-style:italic;font-weight:normal;\" data-heading=\"p\">",
+          "html": "<span style=\"text-transform:uppercase;\" data-heading=\"p\"><span class=\"i i-collector\"></span>&nbsp;Virtual Install</span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(7) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText > div > p:nth-child(6) > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"display:inline-block;font-weight:bold;text-transform:uppercase;\" data-heading=\"h3\">CULTURED MAGAZINE</span>",
-          "target": [
-            ".columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText > div > .h3 > span[data-heading=\"h3\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"display:inline-block;font-style:italic;\" data-heading=\"p\">\"The Oakland arts non-profit teamed up with cult designer Stella Ishii for what has become one of the creative cognoscenti’s favorite nights of the year.\"</span>",
-          "target": [
-            ".cont--kit__wrapper:nth-child(10) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText > div > p:nth-child(6) > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"display:inline-block;\" data-heading=\"h2\">ARTNET</span>",
-          "target": [
-            ".cont--kit__wrapper:nth-child(13) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText > div > .h2 > span[data-heading=\"h2\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"font-style:italic;\" data-heading=\"p\">",
-          "target": [
-            ".cont--kit__wrapper:nth-child(13) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText > div > p:nth-child(6) > span[data-heading=\"p\"]"
+            "a[href=\"#\"]:nth-child(3) > .p.button-content > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
@@ -445,7 +357,7 @@
         {
           "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">10:00 am - 4:00 pm</span>",
           "target": [
-            ".columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(5) > span[data-heading=\"p\"]"
+            ".richText > div > p:nth-child(5) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },

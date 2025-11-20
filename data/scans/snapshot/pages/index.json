@@ -2,7 +2,7 @@
   "url": "https://creativegrowth.org/",
   "status": 200,
   "title": "Home | Creative Growth Art Center",
-  "timestamp": "2025-11-20T23:39:53.476Z",
+  "timestamp": "2025-11-20T23:46:57.177Z",
   "metrics": {
     "violations": 4,
     "incomplete": 3,
@@ -250,9 +250,9 @@
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"carousel__container\" style=\"margin-bottom:60px\" id=\"carousel-623284786237\">",
+          "html": "<div class=\"carousel__container\" style=\"margin-bottom:60px\" id=\"carousel-573011691619\">",
           "target": [
-            "#carousel-623284786237"
+            "#carousel-573011691619"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },

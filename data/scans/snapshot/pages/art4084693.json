@@ -1,11 +1,11 @@
 {
-  "url": "https://creativegrowth.org/2024-symposium-resource-guide",
+  "url": "https://creativegrowth.org/art/4084693",
   "status": 200,
-  "title": "2024 Symposium Resource Guide | Creative Growth Art Center",
-  "timestamp": "2025-11-20T23:40:09.193Z",
+  "title": "Untitled, JHi 394 by John Hiltunen | Creative Growth Art Center",
+  "timestamp": "2025-11-20T23:48:36.062Z",
   "metrics": {
     "violations": 2,
-    "incomplete": 3,
+    "incomplete": 2,
     "passes": 31
   },
   "issues": [
@@ -59,42 +59,42 @@
         {
           "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">Artists</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(5) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(5) > .link-default.link-active.p"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">Exhibitions</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(6) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(6) > .link-default.link-active.p"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">News &amp; Events</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(7) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(7) > .link-default.link-active.p"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">Visit</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(8) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(8) > .link-default.link-active.p"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">Contact</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(9) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(9) > .link-default.link-active.p"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">ACCESSIBILITY</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(10) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(10) > .link-default.link-active.p"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
@@ -120,51 +120,58 @@
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"cont--kit__wrapper\" style=\"margin: 0px auto;\">",
+          "html": "<div class=\"columns__col\" data-block-type=\"columns\" style=\"display:flex;flex:1;min-width:60%;position:relative;width:100%;flex-direction:column;max-width:60%;align-items:center\">",
           "target": [
-            "#mainContent > div > .cont--kit__wrapper:nth-child(1)"
+            "#mainContent > div > .cont--kit__wrapper:nth-child(1) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
+          "html": "<h2 class=\"h3\"><span token=\"ARTIST_NAME\" data-heading=\"h3\"><span class=\"artwork__artist notranslate\">John Hiltunen</span></span></h2>",
           "target": [
-            ".cont--kit__wrapper:nth-child(2)"
+            "h2"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"cont--kit__wrapper\" style=\"margin: 0px auto;\">",
+          "html": "<span token=\"TITLE\" data-heading=\"h2\"><span class=\"artwork__title notranslate\">Untitled, JHi 394</span></span>",
           "target": [
-            "#mainContent > div > .cont--kit__wrapper:nth-child(3)"
+            "span[token=\"TITLE\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:693px;width:100%\">",
+          "html": "<span token=\"DATE\" data-heading=\"h2\"><span class=\"artwork__info__item__date\">, ND</span></span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(4)"
+            "span[token=\"DATE\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"columns__col\" data-block-type=\"columns\" style=\"display:flex;flex:1;min-width:0;position:relative;width:100%;flex-direction:column;padding-left:10px;align-items:flex-start\">",
+          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"MEDIUM\" data-heading=\"p\"><span class=\"artwork__info__item__medium\">Collage on wood</span></span></p>",
           "target": [
-            ".cont--kit__wrapper:nth-child(6) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2)"
+            ".cont--token > p:nth-child(3)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\">",
+          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"DIMENSIONS\" data-heading=\"p\"><span class=\"artwork__info__item__dimensions\">3 x 9 x 1 in</span></span></p>",
           "target": [
-            ".btn--wrapper2:nth-child(8) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
+            ".cont--token > p:nth-child(4)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"h6\" style=\"text-align:center;\"><span style=\"color:rgba(0,0,0,1);color:rgba(255,255,255,1);font-weight:bold;\" data-heading=\"h6\">ADDITIONAL SYMPOSIUM RESOURCES</span></p></span>",
+          "html": "<p class=\"p\"><span token=\"PRICE\" data-heading=\"p\"><span class=\"artwork__info__item__price\">$400</span></span></p>",
           "target": [
-            ".btn--wrapper2:nth-child(10) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
+            ".cont--token > p:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"image2 image__block\" style=\"display: block; font-size: 0px; line-height: 1; text-align: center; margin-bottom: 30px;\">",
+          "target": [
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .image__block.image2"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
@@ -292,72 +299,16 @@
       ],
       "nodes": [
         {
-          "html": "<span data-heading=\"p\">",
+          "html": "<span data-heading=\"p\"><span class=\"i i-share\"></span>&nbsp;SHARE</span>",
           "target": [
-            "p:nth-child(9) > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
-        },
-        {
-          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Heartfelt Gratitude</span>",
-          "target": [
-            "p:nth-child(11) > span[data-heading=\"p\"]"
+            "a[href=\"#\"]:nth-child(2) > .p.button-content > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\">",
+          "html": "<span style=\"text-transform:uppercase;\" data-heading=\"p\"><span class=\"i i-collector\"></span>&nbsp;Virtual Install</span>",
           "target": [
-            "p:nth-child(12) > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span data-heading=\"p\">Finally, we are also incredibly grateful for the continued support of </span>",
-          "target": [
-            "p:nth-child(14) > span[data-heading=\"p\"]:nth-child(1)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span data-heading=\"p\">Target Corporation</span>",
-          "target": [
-            "p:nth-child(14) > a > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span data-heading=\"p\">Together, we continue to build and strengthen our remarkable community. 🌍✨</span>",
-          "target": [
-            "p:nth-child(16) > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"font-size:15px;font-style:italic;\" data-heading=\"p\">",
-          "target": [
-            ".cont--kit__content.richText > div > p > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span data-heading=\"p\">Are you interested in starting a center similar to Creative Growth in your community? Discover the foundational guide to building and sustaining a creative art center. Written by </span>",
-          "target": [
-            ".columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText > div > p > span[data-heading=\"p\"]:nth-child(1)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Florence and Elias Katz</span>",
-          "target": [
-            ".columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText > div > p > span[data-heading=\"p\"]:nth-child(2)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span data-heading=\"p\">",
-          "target": [
-            ".columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText > div > p > span[data-heading=\"p\"]:nth-child(3)"
+            "a[href=\"#\"]:nth-child(3) > .p.button-content > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
@@ -406,7 +357,7 @@
         {
           "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">10:00 am - 4:00 pm</span>",
           "target": [
-            "p:nth-child(5) > span[data-heading=\"p\"]"
+            ".richText > div > p:nth-child(5) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
@@ -465,33 +416,6 @@
             ".foot--whitelabel--copyright--desktop > a[rel=\"noreferrer\"][target=\"_blank\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        }
-      ]
-    },
-    {
-      "kind": "incomplete",
-      "id": "link-in-text-block",
-      "impact": "serious",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1",
-        "RGAAv4",
-        "RGAA-10.6.1"
-      ],
-      "nodes": [
-        {
-          "html": "<a href=\"https://corporate.target.com/about/purpose-history/our-commitments\"><span data-heading=\"p\">Target Corporation</span></a>",
-          "target": [
-            "p:nth-child(14) > a"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
         }
       ]
     }
