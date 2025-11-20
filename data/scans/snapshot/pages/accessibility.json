@@ -1,12 +1,12 @@
 {
-  "url": "https://creativegrowth.org/exhibitions",
+  "url": "https://creativegrowth.org/accessibility",
   "status": 200,
-  "title": "Exhibitions | Creative Growth Art Center",
-  "timestamp": "2025-11-20T23:47:26.251Z",
+  "title": "ACCESSIBILITY",
+  "timestamp": "2025-11-20T23:47:32.309Z",
   "metrics": {
-    "violations": 4,
+    "violations": 3,
     "incomplete": 3,
-    "passes": 30
+    "passes": 29
   },
   "issues": [
     {
@@ -26,38 +26,6 @@
             "html"
           ],
           "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
-        }
-      ]
-    },
-    {
-      "kind": "violation",
-      "id": "link-name",
-      "impact": "serious",
-      "help": "Links must have discernible text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
-      "tags": [
-        "cat.name-role-value",
-        "wcag2a",
-        "wcag244",
-        "wcag412",
-        "section508",
-        "section508.22.a",
-        "TTv5",
-        "TT6.a",
-        "EN-301-549",
-        "EN-9.2.4.4",
-        "EN-9.4.1.2",
-        "ACT",
-        "RGAAv4",
-        "RGAA-6.2.1"
-      ],
-      "nodes": [
-        {
-          "html": "<a href=\"https://www.lapl.org/events/exhibits/looks-home-me-inside-progressive-art-studio\" target=\"_blank\" style=\"display: block; max-height: 100%; max-width: 100%;\">",
-          "target": [
-            ".cont--kit__wrapper:nth-child(9) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .image__block.image2 > a[target=\"_blank\"]"
-          ],
-          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
         }
       ]
     },
@@ -116,9 +84,9 @@
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<a class=\"nav__menu__anch richText\" href=\"https://creativegrowth.org/exhibitions\" style=\"margin-right:30px;display:inline-grid\">",
+          "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">Exhibitions</span></span>",
           "target": [
-            ".nav__menu__anch.richText:nth-child(6)"
+            ".nav__menu__anch.richText:nth-child(6) > .link-default.link-active.button-content"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
@@ -144,9 +112,9 @@
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">ACCESSIBILITY</span></span>",
+          "html": "<a class=\"nav__menu__anch richText\" href=\"https://creativegrowth.org/accessibility\" style=\"display:inline-grid\">",
           "target": [
-            ".nav__menu__anch.richText:nth-child(10) > .link-default.link-active.button-content"
+            ".nav__menu__anch.richText:nth-child(10)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
@@ -174,21 +142,14 @@
         {
           "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
           "target": [
-            "#mainContent > div > .cont--kit__wrapper:nth-child(1)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
-          "target": [
             ".cont--kit__wrapper:nth-child(2)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
+          "html": "<div class=\"parallax\">",
           "target": [
-            "#mainContent > div > .cont--kit__wrapper:nth-child(3)"
+            ".parallax"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
@@ -200,23 +161,23 @@
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
+          "html": "<div class=\"columns__col\" data-block-type=\"columns\" style=\"display:flex;flex:1;min-width:0;position:relative;width:100%;flex-direction:column;padding-left:10px;align-items:flex-start\">",
           "target": [
-            "#mainContent > div > .cont--kit__wrapper:nth-child(5)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"p\" style=\"text-align:center;\"><span style=\"color:rgba(255,255,255,1);font-family:''Borna', sans-serif';font-style:normal;font-weight:bold;\" data-heading=\"p\">LEARN MORE</span></p></span>",
-          "target": [
-            ".cont--kit__wrapper:nth-child(7) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"]:nth-child(1) > .btn--wrapper2 > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
           "target": [
-            ".cont--kit__wrapper:nth-child(8)"
+            ".cont--kit__wrapper:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"columns__col\" data-block-type=\"columns\" style=\"display:flex;flex:1;min-width:0;position:relative;width:100%;flex-direction:column;align-items:flex-start\">",
+          "target": [
+            ".cont--kit__wrapper:nth-child(9) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
@@ -228,128 +189,107 @@
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
+          "html": "<div class=\"richText\" style=\"margin-bottom:10px;margin-top:10px\"><div><p class=\"h3\"><span data-heading=\"h3\">EXHIBITION ACCESSIBILITY RESOURCES</span></p></div></div>",
           "target": [
-            ".cont--kit__wrapper:nth-child(11)"
+            ".cont--kit__wrapper:nth-child(12) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"richText\" style=\"margin-bottom:20px;margin-top:20px\">",
+          "target": [
+            ".cont--kit__wrapper:nth-child(12) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"p\"><span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"p\">DOWNLOAD THE ACCESS GUIDE (ENGLISH)</span></p></span>",
+          "target": [
+            ".btn--wrapper2:nth-child(4) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"p\"><span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"p\">DESCARGAR LA GUÍA DE ACCESO (ESPAÑOL)</span></p></span>",
+          "target": [
+            ".btn--wrapper2:nth-child(5) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
           "target": [
-            ".cont--kit__wrapper:nth-child(12)"
+            ".cont--kit__wrapper:nth-child(13)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"p\" style=\"text-align:center;\"><span style=\"color:rgba(255,255,255,1);font-family:''Borna', sans-serif';font-style:normal;font-weight:bold;\" data-heading=\"p\">LEARN MORE</span></p></span>",
+          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"h6\"><span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"h6\">MALIA RAMSEY'S WINDOW BOX DESCRIPTION</span></p></span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(13) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"]:nth-child(1) > .btn--wrapper2 > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
+            ".cont--kit__wrapper:nth-child(14) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .btn--wrapper2 > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"h6\"><span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"h6\">ELIZABETH RANGEL'S WINDOW BOX DESCRIPTION</span></p></span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(14) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .btn--wrapper2 > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
           "target": [
-            ".cont--kit__wrapper:nth-child(14)"
+            ".cont--kit__wrapper:nth-child(16)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"cont--tabs__controls\">",
+          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"p\"><span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"p\">SHER-RON FREEDMAN'S WINDOW BOX AUDIO DESCRIPTION</span></p></span>",
           "target": [
-            ".cont--tabs__controls"
+            ".btn--wrapper2:nth-child(17) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div style=\"margin-top: 30px;\"><div class=\"cont--token\" style=\"line-height: 1;\"><p class=\"h4\"><span style=\"text-transform:uppercase;\" token=\"TITLE\" data-heading=\"h4\"><span class=\"show__card__title notranslate\">2025 Volta Basel</span></span></p></div></div>",
+          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"p\"><span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"p\">RUTH STAFFORD'S WINDOW BOX AUDIO DESCRIPTION</span></p></span>",
           "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(1) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(2)"
+            ".btn--wrapper2:nth-child(18) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div style=\"margin-top: 20px;\"><div class=\"cont--token\" style=\"line-height: 1;\"><p class=\"h2\"><span token=\"DATE\" data-heading=\"h2\"><span class=\"show__card__date\">June 18 - June 22, 2025</span></span></p></div></div>",
+          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"p\"><span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"p\">TANISHA WARREN'S WINDOW BOX AUDIO DESCRIPTION</span></p></span>",
           "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(1) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(3)"
+            ".cont--kit__wrapper:nth-child(19) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .btn--wrapper2:nth-child(2) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div style=\"margin-top: 30px;\"><div class=\"cont--token\" style=\"line-height: 1;\"><p class=\"h4\"><span style=\"text-transform:uppercase;\" token=\"TITLE\" data-heading=\"h4\"><span class=\"show__card__title notranslate\">2025 Home Show - Exhibition</span></span></p></div></div>",
+          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"h6\"><span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"h6\">CEDRIC JOHNSON'S WINDOW BOX DESCRIPTION</span></p></span>",
           "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(2) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(2)"
+            ".cont--kit__wrapper:nth-child(19) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .btn--wrapper2:nth-child(3) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div style=\"margin-top: 20px;\"><div class=\"cont--token\" style=\"line-height: 1;\"><p class=\"h2\"><span token=\"DATE\" data-heading=\"h2\"><span class=\"show__card__date\">May 9 - July 5, 2025</span></span></p></div></div>",
+          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"p\"><span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"p\">&nbsp;D'LISA FORT'S WINDOW BOX AUDIO DESCRIPTION</span></p></span>",
           "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(2) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(3)"
+            ".cont--kit__wrapper:nth-child(19) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .btn--wrapper2:nth-child(2) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div style=\"margin-top: 30px;\"><div class=\"cont--token\" style=\"line-height: 1;\"><p class=\"h4\"><span style=\"text-transform:uppercase;\" token=\"TITLE\" data-heading=\"h4\"><span class=\"show__card__title notranslate\">2025 NADA NY</span></span></p></div></div>",
+          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"h6\"><span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"h6\">MAUREEN CLAY'S WINDOW BOX DESCRIPTION</span></p></span>",
           "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(3) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(2)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<div style=\"margin-top: 20px;\"><div class=\"cont--token\" style=\"line-height: 1;\"><p class=\"h2\"><span token=\"DATE\" data-heading=\"h2\"><span class=\"show__card__date\">May 7 - May 11, 2025</span></span></p></div></div>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(3) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(3)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<div style=\"margin-top: 30px;\"><div class=\"cont--token\" style=\"line-height: 1;\"><p class=\"h4\"><span style=\"text-transform:uppercase;\" token=\"TITLE\" data-heading=\"h4\"><span class=\"show__card__title notranslate\">2025 Outsider Art Fair, NY</span></span></p></div></div>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(4) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(2)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<div style=\"margin-top: 20px;\"><div class=\"cont--token\" style=\"line-height: 1;\"><p class=\"h2\"><span token=\"DATE\" data-heading=\"h2\"><span class=\"show__card__date\">February 27 - March 2, 2025</span></span></p></div></div>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(4) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(3)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<div style=\"margin-top: 30px;\"><div class=\"cont--token\" style=\"line-height: 1;\"><p class=\"h4\"><span style=\"text-transform:uppercase;\" token=\"TITLE\" data-heading=\"h4\"><span class=\"show__card__title notranslate\">2025 Felix Art Fair - LA </span></span></p></div></div>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(5) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(2)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<div style=\"margin-top: 20px;\"><div class=\"cont--token\" style=\"line-height: 1;\"><p class=\"h2\"><span token=\"DATE\" data-heading=\"h2\"><span class=\"show__card__date\">February 19 - February 23, 2025</span></span></p></div></div>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(5) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(3)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<div style=\"margin-top: 30px;\"><div class=\"cont--token\" style=\"line-height: 1;\"><p class=\"h4\"><span style=\"text-transform:uppercase;\" token=\"TITLE\" data-heading=\"h4\"><span class=\"show__card__title notranslate\">Soul Food - 2025</span></span></p></div></div>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(6) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(2)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<div style=\"margin-top: 20px;\"><div class=\"cont--token\" style=\"line-height: 1;\"><p class=\"h2\"><span token=\"DATE\" data-heading=\"h2\"><span class=\"show__card__date\">February 14 - April 19, 2025</span></span></p></div></div>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(6) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(3)"
+            ".columns__col[data-block-type=\"columns\"]:nth-child(2) > .btn--wrapper2:nth-child(3) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
           "html": "<div class=\"richText\" style=\"padding-bottom:30px\">",
           "target": [
-            ".foot--content > .cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText"
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
@@ -470,373 +410,303 @@
       ],
       "nodes": [
         {
-          "html": "<span style=\"font-weight:bold;\" data-heading=\"h1\">Fashion is the Sunshine that Spotlights Everyone</span>",
+          "html": "<span data-heading=\"h3\">ACCESSIBILITY STATEMENT&nbsp;</span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(3) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .h1 > span[data-heading=\"h1\"]"
+            ".h3:nth-child(3) > span[data-heading=\"h3\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;text-transform:uppercase;\" data-heading=\"h2\">september 26th - November 15TH, 2025</span>",
+          "html": "<span style=\"font-size:30px;\" data-heading=\"p\">",
           "target": [
-            ".richText > div > .h2 > span[data-heading=\"h2\"]"
+            ".cont--kit__content.richText > div > p:nth-child(5) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Fashion is the Sunshine that Spotlights Everyone </span>",
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"h3\">VISUAL NARRATIVE OF CREATIVE GROWTH</span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .p:nth-child(1) > span[data-heading=\"p\"]:nth-child(1)"
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText:nth-child(2) > div > .h3 > span[data-heading=\"h3\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\">celebrates fashion as a central muse for the Creative Growth community. The exhibition showcases how Creative Growth artists expand their artistic practice into garment design, embellishments, painting, drawing, and sculpture.</span>",
+          "html": "<span style=\"text-transform:none;\" data-heading=\"h2\">",
           "target": [
-            "div > .p:nth-child(1) > span[data-heading=\"p\"]:nth-child(2)"
+            ".richText:nth-child(3) > div > .h2 > span[data-heading=\"h2\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\">",
+          "html": "<span data-heading=\"h3\">GENERAL ACCESSIBILITY&nbsp;</span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .p:nth-child(3) > span[data-heading=\"p\"]"
+            ".cont--kit__content.richText > div > .h3:nth-child(1) > span[data-heading=\"h3\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">MEMBER PREVIEW:</span>",
+          "html": "<span style=\"font-size:24px;font-weight:bold;\" data-heading=\"h2\">Mask Policy</span>",
           "target": [
-            ".p:nth-child(6) > span[data-heading=\"p\"]:nth-child(1)"
+            ".h2:nth-child(3) > span[data-heading=\"h2\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\"> Friday, September 26th, 5-6 PM</span>",
+          "html": "<span style=\"font-size:24px;\" data-heading=\"p\">Masks are not required. &nbsp;</span>",
           "target": [
-            ".p:nth-child(6) > span[data-heading=\"p\"]:nth-child(2)"
+            ".cont--kit__content.richText > div > p:nth-child(4) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">PUBLIC OPENING:</span>",
+          "html": "<span style=\"font-size:24px;\" data-heading=\"h2\">Restrooms</span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .p:nth-child(7) > span[data-heading=\"p\"]:nth-child(1)"
+            ".h2:nth-child(6) > span[data-heading=\"h2\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\"> Friday, September 26th, 6-8 PM</span>",
+          "html": "<span style=\"font-size:24px;\" data-heading=\"p\">Accessible, gendered restrooms are in the back of the studio. To access a single-stall gender-neutral restroom, ask a staff member or volunteer.</span>",
           "target": [
-            ".p:nth-child(7) > span[data-heading=\"p\"]:nth-child(2)"
+            "p:nth-child(7) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">DESCRIPTIVE &amp; TACTILE TOUR:</span>",
+          "html": "<span style=\"font-size:24px;\" data-heading=\"h2\">Entrances</span>",
           "target": [
-            ".p:nth-child(9) > span[data-heading=\"p\"]:nth-child(1)"
+            ".h2:nth-child(9) > span[data-heading=\"h2\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\"> Details to come. This tour is primarily for Blind and low vision visitors. Contact Emma (emma@creativegrowth.org) for questions or to RSVP.</span>",
+          "html": "<span style=\"font-size:24px;\" data-heading=\"p\">There are two main entrances to Creative Growth: the studio entrance and gallery entrance. Both face 24th Street and do not have stairs. The studio entrance has an automatic door and is the most accessible.</span>",
           "target": [
-            ".p:nth-child(9) > span[data-heading=\"p\"]:nth-child(2)"
+            "p:nth-child(10) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\"><br>📍 Location: Creative Growth Art Center, 355 24th Street, Oakland, CA, 94612</span>",
+          "html": "<span style=\"font-size:24px;\" data-heading=\"h2\">Art Touching Policy</span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .p:nth-child(10) > span[data-heading=\"p\"]"
+            ".h2:nth-child(12) > span[data-heading=\"h2\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"h1\">SPOTLIGHT EXTERNAL EXHIBITION</span>",
+          "html": "<span style=\"font-size:24px;\" data-heading=\"p\">",
           "target": [
-            ".cont--kit__wrapper:nth-child(8) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .h1 > span[data-heading=\"h1\"]"
+            "p:nth-child(13) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span style=\"font-size:10px;font-style:italic;\" data-heading=\"p\">Artwork by William Tyler</span>",
+          "html": "<span style=\"font-size:24px;\" data-heading=\"h2\">Other Environmental Factors</span>",
           "target": [
-            ".cont--kit__content.richText > div > .p > span[data-heading=\"p\"]"
+            ".h2:nth-child(15) > span[data-heading=\"h2\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span style=\"font-weight:bold;\" data-heading=\"h1\">Creative Growth Artists Featured in Historic LA Public Library Exhibition</span>",
+          "html": "<span style=\"font-size:24px;\" data-heading=\"p\">The studio and gallery are often busy and loud. This is generally a scent-free space. Sometimes the woodshop produces dust and certain art materials have a strong scent.&nbsp;</span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(11) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .h1 > span[data-heading=\"h1\"]"
+            "p:nth-child(16) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\">Creative Growth is proud to be a participating studio in </span>",
+          "html": "<span style=\"font-size:24px;\" data-heading=\"h2\">Language Access</span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(12) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .p:nth-child(1) > span[data-heading=\"p\"]:nth-child(1)"
+            ".h2:nth-child(18) > span[data-heading=\"h2\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span style=\"font-style:italic;font-weight:bold;\" data-heading=\"p\">Looks Like Home to Me: Inside the Progressive Studios</span>",
+          "html": "<span style=\"font-size:24px;\" data-heading=\"p\">For information or support in other languages (ASL, Mandarin, Spanish, and more) contact&nbsp;</span>",
           "target": [
-            "a > span[data-heading=\"p\"]"
+            "p:nth-child(19) > span[data-heading=\"p\"]:nth-child(1)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\">, a new exhibition on view at the Los Angeles Public Library’s Getty Gallery from June 21 to December 7, 2025.</span>",
+          "html": "<span style=\"font-size:24px;font-weight:bold;\" data-heading=\"p\">emma@creativegrowth.org</span>",
           "target": [
-            ".p:nth-child(1) > span[data-heading=\"p\"]:nth-child(3)"
+            "a[href=\"mailto:emma@creativegrowth.org\"] > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\">",
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"h3\">DESCRIPTIVE TOURS</span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(12) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .p:nth-child(3) > span[data-heading=\"p\"]"
+            ".cont--kit__wrapper:nth-child(9) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText:nth-child(2) > div > .h3 > span[data-heading=\"h3\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\">",
+          "html": "<span style=\"font-family:''Borna', sans-serif';font-size:25px;\" data-heading=\"p\">We aim to provide accessible opportunities for each exhibition by offering tactile, descriptive tours. Docents will </span>",
           "target": [
-            ".columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .p:nth-child(5) > span[data-heading=\"p\"]"
+            ".cont--kit__wrapper:nth-child(9) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText:nth-child(3) > div > p:nth-child(1) > span[data-heading=\"p\"]:nth-child(1)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\">“Looks Like Home to Me” is a milestone moment for awareness and inclusion, and we’re thrilled to see our artists represented in this important public setting.</span>",
+          "html": "<span style=\"background-color:transparent;color:#222222;font-family:''Borna', sans-serif';font-size:25px;font-style:normal;font-weight:400;text-decoration:none;vertical-align:baseline;\" data-heading=\"p\">",
           "target": [
-            ".cont--kit__wrapper:nth-child(12) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .p:nth-child(7) > span[data-heading=\"p\"]"
+            ".richText:nth-child(3) > div > p:nth-child(1) > span[data-heading=\"p\"]:nth-child(2)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\">JUNE 21ST - DECEMBER 7TH, 2025</span>",
+          "html": "<span style=\"background-color:transparent;color:#222222;font-family:''Borna', sans-serif';font-size:25px;font-style:normal;font-weight:400;text-decoration:none;vertical-align:baseline;\" data-heading=\"p\">For questions or to RSVP, contact Emma at </span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(12) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .p:nth-child(10) > span[data-heading=\"p\"]"
+            ".columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText:nth-child(3) > div > p:nth-child(4) > span[data-heading=\"p\"]:nth-child(1)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\"><br>📍 Location: Getty Gallery, Los Angeles Central Library</span>",
+          "html": "<span style=\"background-color:transparent;color:rgba(25,134,57,1);font-family:''Borna', sans-serif';font-size:25px;font-style:normal;font-weight:bold;text-decoration:none;vertical-align:baseline;\" data-heading=\"p\">emma@creativegrowth.org</span>",
           "target": [
-            ".p:nth-child(11) > span[data-heading=\"p\"]"
+            "p:nth-child(4) > span[data-heading=\"p\"]:nth-child(2)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span data-heading=\"p\">630 W. Fifth St., Los Angeles, CA 90071</span>",
+          "html": "<span style=\"background-color:transparent;color:#222222;font-family:''Borna', sans-serif';font-size:25px;font-style:normal;font-weight:400;text-decoration:none;vertical-align:baseline;\" data-heading=\"p\"> or call 650-399-5622.</span>",
           "target": [
-            ".p:nth-child(12) > span[data-heading=\"p\"]"
+            "p:nth-child(4) > span[data-heading=\"p\"]:nth-child(3)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"h1\">PAST EXHIBITIONS</span>",
+          "html": "<span style=\"color:rgb(0,0,0);display:inline-block;font-family:Borna;font-size:24px;font-weight:normal;letter-spacing:0px;line-height:34px;margin:0px;vertical-align:middle;\" data-heading=\"p\">The next descriptive and tactile tour will be &nbsp;</span>",
           "target": [
-            ".cont--kit__wrapper:nth-child(14) > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .richText > div > .h1 > span[data-heading=\"h1\"]"
+            ".cont--kit__content.richText > div > p:nth-child(1) > span[data-heading=\"p\"]:nth-child(1)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span class=\"custom-color\" style=\"color:rgba(0,0,0,1);color:rgba(25,134,57,1);text-align:left;\" token=\"TAB_TITLE\" data-heading=\"h2\">2025</span>",
+          "html": "<span style=\"color:rgb(0,0,0);display:inline-block;font-family:Borna;font-size:24px;font-weight:bold;letter-spacing:0px;line-height:34px;margin:0px;vertical-align:middle;\" data-heading=\"p\">Saturday, October 25, 2-3pm</span>",
           "target": [
-            "li:nth-child(1) > .h2[\\<p=\"\"] > .custom-color[token=\"TAB_TITLE\"][data-heading=\"h2\"]"
+            ".cont--kit__content.richText > div > p:nth-child(1) > span[data-heading=\"p\"]:nth-child(2)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span class=\"custom-color\" style=\"color:rgba(0,0,0,1);text-align:left;\" token=\"TAB_TITLE\" data-heading=\"h2\">2024</span>",
+          "html": "<span style=\"color:rgb(0,0,0);display:inline-block;font-family:Borna;font-size:24px;letter-spacing:0px;line-height:34px;margin:0px;vertical-align:middle;\" data-heading=\"p\">",
           "target": [
-            "li:nth-child(2) > .h2[\\<p=\"\"] > .custom-color[token=\"TAB_TITLE\"][data-heading=\"h2\"]"
+            ".cont--kit__wrapper:nth-child(10) > .cont--kit__content.richText > div > p:nth-child(2) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span class=\"custom-color\" style=\"color:rgba(0,0,0,1);text-align:left;\" token=\"TAB_TITLE\" data-heading=\"h2\">2023</span>",
+          "html": "<span data-heading=\"h3\">EXHIBITION ACCESSIBILITY RESOURCES</span>",
           "target": [
-            "li:nth-child(3) > .h2[\\<p=\"\"] > .custom-color[token=\"TAB_TITLE\"][data-heading=\"h2\"]"
+            ".cont--kit__wrapper:nth-child(12) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .richText:nth-child(2) > div > .h3 > span[data-heading=\"h3\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span class=\"custom-color\" style=\"color:rgba(0,0,0,1);text-align:left;\" token=\"TAB_TITLE\" data-heading=\"h2\">2022</span>",
+          "html": "<span style=\"font-size:30px;\" data-heading=\"p\">Can't visit us in person? Listen to audio descriptions of our current window box installations!&nbsp;</span>",
           "target": [
-            "li:nth-child(4) > .h2[\\<p=\"\"] > .custom-color[token=\"TAB_TITLE\"][data-heading=\"h2\"]"
+            ".cont--kit__wrapper:nth-child(13) > .cont--kit__content.richText > div > p:nth-child(2) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span class=\"custom-color\" style=\"color:rgba(0,0,0,1);text-align:left;\" token=\"TAB_TITLE\" data-heading=\"h2\">2021</span>",
+          "html": "<span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"h6\">ELIZABETH RANGEL'S WINDOW BOX DESCRIPTION</span>",
           "target": [
-            "li:nth-child(5) > .h2[\\<p=\"\"] > .custom-color[token=\"TAB_TITLE\"][data-heading=\"h2\"]"
+            ".cont--kit__wrapper:nth-child(14) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(2) > .btn--wrapper2 > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content > .h6 > span[data-heading=\"h6\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span class=\"custom-color\" style=\"color:rgba(0,0,0,1);text-align:left;\" token=\"TAB_TITLE\" data-heading=\"h2\">2020</span>",
+          "html": "<span style=\"font-size:30px;\" data-heading=\"p\">Past Window Box Audio Descriptions:</span>",
           "target": [
-            "li:nth-child(6) > .h2[\\<p=\"\"] > .custom-color[token=\"TAB_TITLE\"][data-heading=\"h2\"]"
+            ".cont--kit__wrapper:nth-child(16) > .cont--kit__content.richText > div > p:nth-child(2) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span class=\"custom-color\" style=\"color:rgba(0,0,0,1);text-align:left;\" token=\"TAB_TITLE\" data-heading=\"h2\">2019</span>",
+          "html": "<span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"p\">TANISHA WARREN'S WINDOW BOX AUDIO DESCRIPTION</span>",
           "target": [
-            "li:nth-child(7) > .h2[\\<p=\"\"] > .custom-color[token=\"TAB_TITLE\"][data-heading=\"h2\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span class=\"show__card__title notranslate\">2025 Volta Basel</span>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(1) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(2) > .cont--token > .h4 > span[token=\"TITLE\"][data-heading=\"h4\"] > .show__card__title.notranslate"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span class=\"show__card__date\">June 18 - June 22, 2025</span>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(1) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(3) > .cont--token > .h2 > span[token=\"DATE\"][data-heading=\"h2\"] > .show__card__date"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span class=\"show__card__title notranslate\">2025 Home Show - Exhibition</span>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(2) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(2) > .cont--token > .h4 > span[token=\"TITLE\"][data-heading=\"h4\"] > .show__card__title.notranslate"
+            ".columns__col[data-block-type=\"columns\"]:nth-child(1) > .btn--wrapper2:nth-child(2) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content > p > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
         },
         {
-          "html": "<span class=\"show__card__date\">May 9 - July 5, 2025</span>",
+          "html": "<span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"h6\">CEDRIC JOHNSON'S WINDOW BOX DESCRIPTION</span>",
           "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(2) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(3) > .cont--token > .h2 > span[token=\"DATE\"][data-heading=\"h2\"] > .show__card__date"
+            ".columns__col[data-block-type=\"columns\"]:nth-child(1) > .btn--wrapper2:nth-child(3) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content > .h6 > span[data-heading=\"h6\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
-          "html": "<span class=\"show__card__title notranslate\">2025 NADA NY</span>",
+          "html": "<span style=\"color:rgba(255,255,255,1);font-size:20px;font-style:normal;font-weight:bold;\" data-heading=\"p\">&nbsp;D'LISA FORT'S WINDOW BOX AUDIO DESCRIPTION</span>",
           "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(3) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(2) > .cont--token > .h4 > span[token=\"TITLE\"][data-heading=\"h4\"] > .show__card__title.notranslate"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span class=\"show__card__date\">May 7 - May 11, 2025</span>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(3) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(3) > .cont--token > .h2 > span[token=\"DATE\"][data-heading=\"h2\"] > .show__card__date"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span class=\"show__card__title notranslate\">2025 Outsider Art Fair, NY</span>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(4) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(2) > .cont--token > .h4 > span[token=\"TITLE\"][data-heading=\"h4\"] > .show__card__title.notranslate"
+            ".columns__col[data-block-type=\"columns\"]:nth-child(2) > .btn--wrapper2:nth-child(2) > .btn.btn--custom2[type=\"button\"] > .link-default.link-active.button-content > p > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
-        },
-        {
-          "html": "<span class=\"show__card__date\">February 27 - March 2, 2025</span>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(4) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(3) > .cont--token > .h2 > span[token=\"DATE\"][data-heading=\"h2\"] > .show__card__date"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span class=\"show__card__title notranslate\">2025 Felix Art Fair - LA </span>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(5) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(2) > .cont--token > .h4 > span[token=\"TITLE\"][data-heading=\"h4\"] > .show__card__title.notranslate"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
-        },
-        {
-          "html": "<span class=\"show__card__date\">February 19 - February 23, 2025</span>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(5) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(3) > .cont--token > .h2 > span[token=\"DATE\"][data-heading=\"h2\"] > .show__card__date"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span class=\"show__card__title notranslate\">Soul Food - 2025</span>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(6) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(2) > .cont--token > .h4 > span[token=\"TITLE\"][data-heading=\"h4\"] > .show__card__title.notranslate"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span class=\"show__card__date\">February 14 - April 19, 2025</span>",
-          "target": [
-            ".current > .cont.cont--shows.cont__row--custom > .col.col--4.col--custom:nth-child(6) > .cell--whitelabel.cell--whitelabel--undefined.cell--whitelabel--show > div:nth-child(3) > .cont--token > .h2 > span[token=\"DATE\"][data-heading=\"h2\"] > .show__card__date"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
           "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">Creative Growth Art Center</span>",
           "target": [
-            ".foot--content > .cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > .p:nth-child(1) > span[data-heading=\"p\"]"
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(1) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
           "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">355 24th Street, Oakland, CA 94612&nbsp;</span>",
           "target": [
-            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > .p:nth-child(2) > span[data-heading=\"p\"]:nth-child(1)"
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(2) > span[data-heading=\"p\"]:nth-child(1)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
           "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">510.836.2340 x 115 / </span>",
           "target": [
-            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > .p:nth-child(2) > span[data-heading=\"p\"]:nth-child(3)"
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(2) > span[data-heading=\"p\"]:nth-child(3)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
           "html": "<span style=\"color:rgba(40,176,77,1);font-weight:bold;\" data-heading=\"p\">gallery@creativegrowth.org</span>",
           "target": [
-            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > .p:nth-child(2) > span[data-heading=\"p\"]:nth-child(4)"
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(2) > span[data-heading=\"p\"]:nth-child(4)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
           "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">Gallery Hours</span>",
           "target": [
-            ".foot--content > .cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > .p:nth-child(3) > span[data-heading=\"p\"]"
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(3) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
           "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">Wednesday - Saturday</span>",
           "target": [
-            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > .p:nth-child(4) > span[data-heading=\"p\"]"
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(4) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
           "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">10:00 am - 4:00 pm</span>",
           "target": [
-            ".foot--content > .cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > .p:nth-child(5) > span[data-heading=\"p\"]"
+            ".columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(5) > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
           "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">FIND US ON SOCIAL MEDIA</span>",
           "target": [
-            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(2) > div > .p > span[data-heading=\"p\"]"
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(2) > div > p > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
           "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">JOIN OUR MAILING LIST</span>",
           "target": [
-            ".richText:nth-child(4) > div > .p > span[data-heading=\"p\"]"
+            ".richText:nth-child(4) > div > p > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
@@ -903,11 +773,11 @@
       ],
       "nodes": [
         {
-          "html": "<a href=\"https://www.lapl.org/events/exhibits/looks-home-me-inside-progressive-art-studio\"><span style=\"font-style:italic;font-weight:bold;\" data-heading=\"p\">Looks Like Home to Me: Inside the Progressive Studios</span></a>",
+          "html": "<a href=\"mailto:emma@creativegrowth.org\"><span style=\"font-size:24px;font-weight:bold;\" data-heading=\"p\">emma@creativegrowth.org</span></a>",
           "target": [
-            ".p:nth-child(1) > a"
+            "a[href=\"mailto:emma@creativegrowth.org\"]"
           ],
-          "failureSummary": "Fix any of the following:\n  Element's foreground contrast ratio could not be determined"
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
         }
       ]
     }

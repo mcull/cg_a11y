@@ -1,8 +1,8 @@
 {
-  "url": "https://creativegrowth.org/art/4071978",
+  "url": "https://creativegrowth.org/art/4283176",
   "status": 200,
-  "title": "Untitled, JK 14 by Jane Kassner | Creative Growth Art Center",
-  "timestamp": "2025-11-20T23:48:58.401Z",
+  "title": "Untitled, RVe 385 by Ron Veasey | Creative Growth Art Center",
+  "timestamp": "2025-11-20T23:48:15.392Z",
   "metrics": {
     "violations": 2,
     "incomplete": 2,
@@ -127,58 +127,44 @@
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<h2 class=\"h3\"><span token=\"ARTIST_NAME\" data-heading=\"h3\"><span class=\"artwork__artist notranslate\">Jane Kassner</span></span></h2>",
+          "html": "<h2 class=\"h3\"><span token=\"ARTIST_NAME\" data-heading=\"h3\"><span class=\"artwork__artist notranslate\">Ron Veasey</span></span></h2>",
           "target": [
             "h2"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<span token=\"TITLE\" data-heading=\"h2\"><span class=\"artwork__title notranslate\">Untitled, JK 14</span></span>",
+          "html": "<span token=\"TITLE\" data-heading=\"h2\"><span class=\"artwork__title notranslate\">Untitled, RVe 385</span></span>",
           "target": [
             "span[token=\"TITLE\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<span token=\"DATE\" data-heading=\"h2\"><span class=\"artwork__info__item__date\">, 2016</span></span>",
+          "html": "<span token=\"DATE\" data-heading=\"h2\"><span class=\"artwork__info__item__date\">, ND</span></span>",
           "target": [
             "span[token=\"DATE\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"MEDIUM\" data-heading=\"p\"><span class=\"artwork__info__item__medium\">Acrylic on magazine page</span></span></p>",
+          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"MEDIUM\" data-heading=\"p\"><span class=\"artwork__info__item__medium\">Acrylic on paper</span></span></p>",
           "target": [
             ".cont--token > p:nth-child(3)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"DIMENSIONS\" data-heading=\"p\"><span class=\"artwork__info__item__dimensions\">17.25 x 12.25 in</span></span></p>",
+          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"DIMENSIONS\" data-heading=\"p\"><span class=\"artwork__info__item__dimensions\">44 x 30 in</span></span></p>",
           "target": [
             ".cont--token > p:nth-child(4)"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<p class=\"p\"><span token=\"PRICE\" data-heading=\"p\"><span class=\"artwork__info__item__price\">$750</span></span></p>",
+          "html": "<p class=\"p\"><span token=\"PRICE\" data-heading=\"p\"><span class=\"artwork__info__item__price\">$6,000</span></span></p>",
           "target": [
             ".cont--token > p:nth-child(5)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<p class=\"p\">",
-          "target": [
-            "p:nth-child(7)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<div class=\"image2 image__block\" style=\"display: block; font-size: 0px; line-height: 1; text-align: center; margin-bottom: 30px;\">",
-          "target": [
-            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .image__block.image2"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
@@ -316,13 +302,6 @@
           "html": "<span style=\"text-transform:uppercase;\" data-heading=\"p\"><span class=\"i i-collector\"></span>&nbsp;Virtual Install</span>",
           "target": [
             "a[href=\"#\"]:nth-child(3) > .p.button-content > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">PURCHASE</span>",
-          "target": [
-            ".btn--cta > .link-default.link-active.button-content > p > span[data-heading=\"p\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },

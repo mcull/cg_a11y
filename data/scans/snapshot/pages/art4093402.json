@@ -1,14 +1,49 @@
 {
-  "url": "https://creativegrowth.org/art/4071978",
-  "status": 200,
-  "title": "Untitled, JK 14 by Jane Kassner | Creative Growth Art Center",
-  "timestamp": "2025-11-20T23:48:58.401Z",
+  "url": "https://creativegrowth.org/art/4093402",
+  "status": 404,
+  "title": "Not Found",
+  "timestamp": "2025-11-20T23:53:12.331Z",
   "metrics": {
-    "violations": 2,
+    "violations": 4,
     "incomplete": 2,
     "passes": 31
   },
   "issues": [
+    {
+      "kind": "violation",
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "nodes": [
+        {
+          "html": "<p class=\"show__card__text center\">The page you are looking for could not be found. Please click <a href=\"#\">here</a> to return to the last page you were viewing.</p>",
+          "target": [
+            ".show__card__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.11 (foreground color: #7d7d7d, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span style=\"color:rgba(40,176,77,1);font-weight:bold;\" data-heading=\"p\">gallery@creativegrowth.org</span>",
+          "target": [
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(2) > span[data-heading=\"p\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #28b04d, background color: #f0f0f0, font size: 12.8pt (17px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
     {
       "kind": "violation",
       "id": "landmark-one-main",
@@ -26,6 +61,33 @@
             "html"
           ],
           "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "kind": "violation",
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1",
+        "RGAAv4",
+        "RGAA-10.6.1"
+      ],
+      "nodes": [
+        {
+          "html": "<a href=\"#\">here</a>",
+          "target": [
+            ".show__card__text > a[href=\"#\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.13:1 with the surrounding text. (Minimum contrast is 3:1, link text: #198639, surrounding text: #7d7d7d)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
         }
       ]
     },
@@ -120,58 +182,9 @@
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
         {
-          "html": "<div class=\"columns__col\" data-block-type=\"columns\" style=\"display:flex;flex:1;min-width:60%;position:relative;width:100%;flex-direction:column;max-width:60%;align-items:center\">",
+          "html": "<div id=\"mainContent\" class=\"sect\">",
           "target": [
-            "#mainContent > div > .cont--kit__wrapper:nth-child(1) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<h2 class=\"h3\"><span token=\"ARTIST_NAME\" data-heading=\"h3\"><span class=\"artwork__artist notranslate\">Jane Kassner</span></span></h2>",
-          "target": [
-            "h2"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<span token=\"TITLE\" data-heading=\"h2\"><span class=\"artwork__title notranslate\">Untitled, JK 14</span></span>",
-          "target": [
-            "span[token=\"TITLE\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<span token=\"DATE\" data-heading=\"h2\"><span class=\"artwork__info__item__date\">, 2016</span></span>",
-          "target": [
-            "span[token=\"DATE\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"MEDIUM\" data-heading=\"p\"><span class=\"artwork__info__item__medium\">Acrylic on magazine page</span></span></p>",
-          "target": [
-            ".cont--token > p:nth-child(3)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<p class=\"p\"><span class=\"custom-color\" token=\"DIMENSIONS\" data-heading=\"p\"><span class=\"artwork__info__item__dimensions\">17.25 x 12.25 in</span></span></p>",
-          "target": [
-            ".cont--token > p:nth-child(4)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<p class=\"p\"><span token=\"PRICE\" data-heading=\"p\"><span class=\"artwork__info__item__price\">$750</span></span></p>",
-          "target": [
-            ".cont--token > p:nth-child(5)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "html": "<p class=\"p\">",
-          "target": [
-            "p:nth-child(7)"
+            "#mainContent"
           ],
           "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
         },
@@ -306,90 +319,6 @@
       ],
       "nodes": [
         {
-          "html": "<span data-heading=\"p\"><span class=\"i i-share\"></span>&nbsp;SHARE</span>",
-          "target": [
-            "a[href=\"#\"]:nth-child(2) > .p.button-content > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"text-transform:uppercase;\" data-heading=\"p\"><span class=\"i i-collector\"></span>&nbsp;Virtual Install</span>",
-          "target": [
-            "a[href=\"#\"]:nth-child(3) > .p.button-content > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">PURCHASE</span>",
-          "target": [
-            ".btn--cta > .link-default.link-active.button-content > p > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">Creative Growth Art Center</span>",
-          "target": [
-            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(1) > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">355 24th Street, Oakland, CA 94612&nbsp;</span>",
-          "target": [
-            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(2) > span[data-heading=\"p\"]:nth-child(1)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">510.836.2340 x 115 / </span>",
-          "target": [
-            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(2) > span[data-heading=\"p\"]:nth-child(3)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"color:rgba(40,176,77,1);font-weight:bold;\" data-heading=\"p\">gallery@creativegrowth.org</span>",
-          "target": [
-            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(2) > span[data-heading=\"p\"]:nth-child(4)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">Gallery Hours</span>",
-          "target": [
-            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(3) > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">Wednesday - Saturday</span>",
-          "target": [
-            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(4) > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">10:00 am - 4:00 pm</span>",
-          "target": [
-            ".richText > div > p:nth-child(5) > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">FIND US ON SOCIAL MEDIA</span>",
-          "target": [
-            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(2) > div > p > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
-          "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">JOIN OUR MAILING LIST</span>",
-          "target": [
-            ".richText:nth-child(4) > div > p > span[data-heading=\"p\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
           "html": "<span style=\"color:rgba(0,0,0,1);font-family:'Roboto';font-size:14px;line-height:26px;vertical-align:middle;\" data-heading=\"h3\">FULL NAME*</span>",
           "target": [
             ".columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .input--whitelabel.richText > .input__placeholder.input__placeholder--center > .h3 > span[data-heading=\"h3\"]"
@@ -397,25 +326,11 @@
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
         },
         {
-          "html": "<input type=\"text\" aria-label=\"Full Name *\" class=\"p\" name=\"Name\" required=\"\" style=\"border-radius:2px;bo...\" value=\"\">",
-          "target": [
-            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .cont--kit__wrapper > form > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .input--whitelabel.richText > input[aria-label=\"Full Name *\"][name=\"Name\"][type=\"text\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-        },
-        {
           "html": "<span style=\"color:rgba(0,0,0,1);font-family:'Roboto';font-size:14px;line-height:26px;vertical-align:middle;\" data-heading=\"h3\">EMAIL ADDRESS*</span>",
           "target": [
             "form > .input--whitelabel.richText > .input__placeholder.input__placeholder--center > .h3 > span[data-heading=\"h3\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
-        },
-        {
-          "html": "<input type=\"email\" aria-label=\"Email Address *\" class=\"p\" name=\"Email\" required=\"\" style=\"border-radius:2px;bo...\" value=\"\">",
-          "target": [
-            "form > .input--whitelabel.richText > input[type=\"email\"][aria-label=\"Email Address *\"][name=\"Email\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
           "html": "<span class=\"foot--whitelabel--copyright foot--whitelabel--copyright--desktop\" style=\"font-size:12px;letter-spacing:1px;text-align:center;text-transform:capitalize;padding-bottom:40px;background-color:rgba(0,0,0,0.057)\">",

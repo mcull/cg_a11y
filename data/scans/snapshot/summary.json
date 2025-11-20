@@ -1,24 +1,90 @@
 {
-  "scanId": "2025-11-20T23-39-47-815Z",
+  "scanId": "2025-11-20T23-46-48-108Z",
   "baseUrl": "https://creativegrowth.org/",
-  "startedAt": "2025-11-20T23:39:47.815Z",
-  "finishedAt": "2025-11-20T23:40:58.082Z",
+  "startedAt": "2025-11-20T23:46:48.108Z",
+  "finishedAt": "2025-11-20T23:56:15.331Z",
   "totals": {
-    "pages": 21,
-    "violations": 52,
+    "pages": 97,
+    "violations": 222,
     "incomplete": 0
   },
   "pages": [
     {
-      "url": "https://creativegrowth.org/2024-symposium-resource-guide",
+      "url": "https://creativegrowth.org/6th-annual-creating-community-symposium",
       "status": 200,
-      "slug": "2024-symposium-resource-guide",
+      "slug": "6th-annual-creating-community-symposium",
       "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/accessibility",
+      "status": 200,
+      "slug": "accessibility",
+      "violationCount": 3
+    },
+    {
+      "url": "https://creativegrowth.org/art/4069965",
+      "status": 200,
+      "slug": "art4069965",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4071282",
+      "status": 404,
+      "slug": "art4071282",
+      "violationCount": 4
     },
     {
       "url": "https://creativegrowth.org/art/4071978",
       "status": 200,
       "slug": "art4071978",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4076860",
+      "status": 200,
+      "slug": "art4076860",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4079400",
+      "status": 200,
+      "slug": "art4079400",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4080470",
+      "status": 200,
+      "slug": "art4080470",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4082480",
+      "status": 200,
+      "slug": "art4082480",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4084608",
+      "status": 404,
+      "slug": "art4084608",
+      "violationCount": 4
+    },
+    {
+      "url": "https://creativegrowth.org/art/4084693",
+      "status": 200,
+      "slug": "art4084693",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4085477",
+      "status": 200,
+      "slug": "art4085477",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4085664",
+      "status": 200,
+      "slug": "art4085664",
       "violationCount": 2
     },
     {
@@ -28,27 +94,225 @@
       "violationCount": 2
     },
     {
-      "url": "https://creativegrowth.org/art/4087514",
+      "url": "https://creativegrowth.org/art/4086456",
       "status": 200,
-      "slug": "art4087514",
+      "slug": "art4086456",
       "violationCount": 2
     },
     {
-      "url": "https://creativegrowth.org/art/4088737",
+      "url": "https://creativegrowth.org/art/4086634",
       "status": 200,
-      "slug": "art4088737",
+      "slug": "art4086634",
       "violationCount": 2
     },
     {
-      "url": "https://creativegrowth.org/art/4107042",
+      "url": "https://creativegrowth.org/art/4086662",
       "status": 200,
-      "slug": "art4107042",
+      "slug": "art4086662",
       "violationCount": 2
     },
     {
-      "url": "https://creativegrowth.org/art/4269242",
+      "url": "https://creativegrowth.org/art/4086666",
       "status": 200,
-      "slug": "art4269242",
+      "slug": "art4086666",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4087220",
+      "status": 200,
+      "slug": "art4087220",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4087333",
+      "status": 200,
+      "slug": "art4087333",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4088030",
+      "status": 200,
+      "slug": "art4088030",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4089796",
+      "status": 200,
+      "slug": "art4089796",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4089858",
+      "status": 200,
+      "slug": "art4089858",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4089874",
+      "status": 200,
+      "slug": "art4089874",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4089880",
+      "status": 200,
+      "slug": "art4089880",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4089911",
+      "status": 200,
+      "slug": "art4089911",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4089918",
+      "status": 200,
+      "slug": "art4089918",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4089950",
+      "status": 200,
+      "slug": "art4089950",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4089965",
+      "status": 200,
+      "slug": "art4089965",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4089976",
+      "status": 200,
+      "slug": "art4089976",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4090430",
+      "status": 200,
+      "slug": "art4090430",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4090966",
+      "status": 200,
+      "slug": "art4090966",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4091001",
+      "status": 200,
+      "slug": "art4091001",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4091447",
+      "status": 200,
+      "slug": "art4091447",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4091452",
+      "status": 200,
+      "slug": "art4091452",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4091453",
+      "status": 200,
+      "slug": "art4091453",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4091464",
+      "status": 200,
+      "slug": "art4091464",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4091596",
+      "status": 200,
+      "slug": "art4091596",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4092709",
+      "status": 200,
+      "slug": "art4092709",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4092729",
+      "status": 200,
+      "slug": "art4092729",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4092730",
+      "status": 200,
+      "slug": "art4092730",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4092731",
+      "status": 200,
+      "slug": "art4092731",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4092732",
+      "status": 200,
+      "slug": "art4092732",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4092787",
+      "status": 200,
+      "slug": "art4092787",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4092793",
+      "status": 200,
+      "slug": "art4092793",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4092958",
+      "status": 404,
+      "slug": "art4092958",
+      "violationCount": 4
+    },
+    {
+      "url": "https://creativegrowth.org/art/4093402",
+      "status": 404,
+      "slug": "art4093402",
+      "violationCount": 4
+    },
+    {
+      "url": "https://creativegrowth.org/art/4107046",
+      "status": 200,
+      "slug": "art4107046",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4107053",
+      "status": 200,
+      "slug": "art4107053",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4114656",
+      "status": 200,
+      "slug": "art4114656",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4114700",
+      "status": 200,
+      "slug": "art4114700",
       "violationCount": 2
     },
     {
@@ -58,9 +322,129 @@
       "violationCount": 2
     },
     {
+      "url": "https://creativegrowth.org/art/4280031",
+      "status": 200,
+      "slug": "art4280031",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4283176",
+      "status": 200,
+      "slug": "art4283176",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4350145",
+      "status": 200,
+      "slug": "art4350145",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4350147",
+      "status": 200,
+      "slug": "art4350147",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4350150",
+      "status": 200,
+      "slug": "art4350150",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4364578",
+      "status": 200,
+      "slug": "art4364578",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4365075",
+      "status": 200,
+      "slug": "art4365075",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4365083",
+      "status": 200,
+      "slug": "art4365083",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4413108",
+      "status": 200,
+      "slug": "art4413108",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4413120",
+      "status": 200,
+      "slug": "art4413120",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4413141",
+      "status": 200,
+      "slug": "art4413141",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4413142",
+      "status": 200,
+      "slug": "art4413142",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4413143",
+      "status": 200,
+      "slug": "art4413143",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4413144",
+      "status": 200,
+      "slug": "art4413144",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4425740",
+      "status": 200,
+      "slug": "art4425740",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4448955",
+      "status": 200,
+      "slug": "art4448955",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4490931",
+      "status": 404,
+      "slug": "art4490931",
+      "violationCount": 4
+    },
+    {
+      "url": "https://creativegrowth.org/art/4530068",
+      "status": 200,
+      "slug": "art4530068",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4662225",
+      "status": 200,
+      "slug": "art4662225",
+      "violationCount": 2
+    },
+    {
       "url": "https://creativegrowth.org/art/4662258",
       "status": 200,
       "slug": "art4662258",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4728162",
+      "status": 200,
+      "slug": "art4728162",
       "violationCount": 2
     },
     {
@@ -70,16 +454,64 @@
       "violationCount": 2
     },
     {
-      "url": "https://creativegrowth.org/art/untitled-km-43-by-katherine-miller",
+      "url": "https://creativegrowth.org/art/jenny-ls-355-by-lulu-sotelo",
       "status": 200,
-      "slug": "artuntitled-km-43-by-katherine-miller",
+      "slug": "artjenny-ls-355-by-lulu-sotelo",
       "violationCount": 2
     },
     {
-      "url": "https://creativegrowth.org/contact",
+      "url": "https://creativegrowth.org/art/michael-jackson-with-flowers-sf-69-by-sher-ron-freeman",
       "status": 200,
-      "slug": "contact",
+      "slug": "artmichael-jackson-with-flowers-sf-69-by-sher-ron-freeman",
       "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/untitled-bt-2010-by-natascha-haehlen",
+      "status": 200,
+      "slug": "artuntitled-bt-2010-by-natascha-haehlen",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/untitled-jag-360-by-juan-aguilera",
+      "status": 200,
+      "slug": "artuntitled-jag-360-by-juan-aguilera",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/untitled-jg-148-by-jorge-gomez",
+      "status": 200,
+      "slug": "artuntitled-jg-148-by-jorge-gomez",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/untitled-jma-1688-by-john-martin",
+      "status": 200,
+      "slug": "artuntitled-jma-1688-by-john-martin",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/untitled-ra-199-by-rickie-algarva",
+      "status": 200,
+      "slug": "artuntitled-ra-199-by-rickie-algarva",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/untitled-ra-200-by-rickie-algarva",
+      "status": 200,
+      "slug": "artuntitled-ra-200-by-rickie-algarva",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/untitled-rv-193-by-ray-vickers",
+      "status": 200,
+      "slug": "artuntitled-rv-193-by-ray-vickers",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/collaborate",
+      "status": 200,
+      "slug": "collaborate",
+      "violationCount": 3
     },
     {
       "url": "https://creativegrowth.org/enroll",
@@ -94,10 +526,28 @@
       "violationCount": 4
     },
     {
+      "url": "https://creativegrowth.org/fashion-is-the-sunshine",
+      "status": 200,
+      "slug": "fashion-is-the-sunshine",
+      "violationCount": 4
+    },
+    {
+      "url": "https://creativegrowth.org/get-involved",
+      "status": 200,
+      "slug": "get-involved",
+      "violationCount": 4
+    },
+    {
       "url": "https://creativegrowth.org/",
       "status": 200,
       "slug": "index",
       "violationCount": 4
+    },
+    {
+      "url": "https://creativegrowth.org/jewelry",
+      "status": 200,
+      "slug": "jewelry",
+      "violationCount": 2
     },
     {
       "url": "https://creativegrowth.org/post/15289-fashion-is-the-sunshine-that-spotlights-everyone",
@@ -106,21 +556,15 @@
       "violationCount": 3
     },
     {
-      "url": "https://creativegrowth.org/post/16207-creative-growth-x-6397-featured-in-harpers-bazaar-cultured-and-artnet",
+      "url": "https://creativegrowth.org/post/15939-nada-miami-2025",
       "status": 200,
-      "slug": "post16207-creative-growth-x-6397-featured-in-harpers-bazaar-cultured-and-artnet",
+      "slug": "post15939-nada-miami-2025",
       "violationCount": 3
     },
     {
-      "url": "https://creativegrowth.org/sculpture",
+      "url": "https://creativegrowth.org/press-room",
       "status": 200,
-      "slug": "sculpture",
-      "violationCount": 2
-    },
-    {
-      "url": "https://creativegrowth.org/shop",
-      "status": 200,
-      "slug": "shop",
+      "slug": "press-room",
       "violationCount": 4
     },
     {
@@ -128,6 +572,18 @@
       "status": 200,
       "slug": "showcreative-growth-art-center-fashion-is-the-sunshine-that-spotlights-everyone-ii",
       "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/show/creative-growth-art-center-halloween-ecomm-drop-2025",
+      "status": 200,
+      "slug": "showcreative-growth-art-center-halloween-ecomm-drop-2025",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/visit",
+      "status": 200,
+      "slug": "visit",
+      "violationCount": 4
     },
     {
       "url": "https://creativegrowth.org/wall-art",
