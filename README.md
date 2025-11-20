@@ -1,2 +1,2 @@
-# gc_a11y
+# cg_a11y
 An Accessibility Audit
