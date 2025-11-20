@@ -26,9 +26,11 @@ export default function PageDetail({ params }: { params: { slug: string } }) {
           </thead>
           <tbody>
             {page.issues.map((i) => (
-              <tr key={i.id}>
+              <tr key={i.id + (i.kind || 'violation')}>
                 <td><code>{i.id}</code></td>
-                <td className={`impact-${i.impact || 'minor'}`}>{i.impact || 'n/a'}</td>
+                <td className={`impact-${i.impact || 'minor'}`}>
+                  {i.kind === 'incomplete' ? 'needs review' : i.impact || 'n/a'}
+                </td>
                 <td>
                   <a href={i.helpUrl} target="_blank" rel="noreferrer">{i.help}</a>
                 </td>
@@ -50,4 +52,3 @@ export default function PageDetail({ params }: { params: { slug: string } }) {
     </div>
   );
 }
-

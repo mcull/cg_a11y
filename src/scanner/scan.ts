@@ -23,7 +23,7 @@ type PageRecord = {
   title?: string;
   timestamp: string;
   metrics: { violations: number; incomplete: number; passes: number };
-  issues: any[];
+  issues: any[]; // includes both violations and (optionally) incomplete
 };
 
 //
@@ -36,22 +36,40 @@ function slugFromUrl(u: URL): string {
 
 //
 
-async function scanPage(page: Page, url: string) {
+async function scanPage(
+  page: Page,
+  url: string,
+  opts: {
+    tags: string[];
+    rules: string[];
+    disableRules: string[];
+    includeIncomplete: boolean;
+  }
+) {
   const res = await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 });
   const status = res?.status() ?? 0;
   const title = await page.title();
-  const results = await new AxeBuilder({ page })
-    .withTags(['wcag2a', 'wcag2aa'])
-    .analyze();
+  let builder = new AxeBuilder({ page });
+  if (opts.tags.length) builder = builder.withTags(opts.tags);
+  if (opts.rules.length) builder = builder.withRules(opts.rules);
+  if (opts.disableRules.length) builder = builder.disableRules(opts.disableRules);
+  builder = builder.options({ resultTypes: opts.includeIncomplete ? ['violations', 'incomplete'] : ['violations'] } as any);
+  const results = await builder.analyze();
   return { status, title, results };
 }
 
 async function main() {
   const argv = await yargs(hideBin(process.argv))
-    .option('base', { type: 'string', demandOption: true, desc: 'Base URL to crawl' })
-    .option('max-pages', { type: 'number', default: 50 })
-    .option('concurrency', { type: 'number', default: 2 })
-    .option('output', { type: 'string', default: path.join('data', 'scans') })
+    .option('base', { type: 'string', demandOption: true, desc: 'Base URL to crawl (or a specific page)' })
+    .option('max-pages', { type: 'number', default: 50, desc: 'Max pages to crawl' })
+    .option('concurrency', { type: 'number', default: 2, desc: 'Concurrent page processing' })
+    .option('output', { type: 'string', default: path.join('data', 'scans'), desc: 'Output directory' })
+    .option('tags', { type: 'string', desc: 'Comma-separated axe tags (e.g., wcag2a,wcag2aa,best-practice)' })
+    .option('rules', { type: 'string', desc: 'Comma-separated axe rule IDs to include' })
+    .option('disable-rules', { type: 'string', desc: 'Comma-separated axe rule IDs to disable' })
+    .option('best-practices', { type: 'boolean', default: false, desc: 'Include axe best-practice rules' })
+    .option('include-incomplete', { type: 'boolean', default: true, desc: 'Include incomplete results (needs review)' })
+    .option('headful', { type: 'boolean', default: false, desc: 'Run headed browser (debug)' })
     .strict()
     .parse();
 
@@ -62,7 +80,7 @@ async function main() {
   const pagesDir = path.join(outDir, 'pages');
   fs.mkdirSync(pagesDir, { recursive: true });
 
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: !argv.headful });
   const context = await browser.newContext({
     viewport: { width: 1366, height: 920 },
     userAgent:
@@ -84,7 +102,17 @@ async function main() {
     const u = new URL(target);
     const slug = slugFromUrl(u);
     try {
-      const { status, title, results } = await scanPage(page, target);
+      const tags = argv.tags
+        ? argv.tags.split(',').map((s) => s.trim()).filter(Boolean)
+        : ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', ...(argv['best-practices'] ? ['best-practice'] : [])];
+      const rules = argv.rules ? argv.rules.split(',').map((s) => s.trim()).filter(Boolean) : [];
+      const disableRules = argv['disable-rules'] ? argv['disable-rules'].split(',').map((s) => s.trim()).filter(Boolean) : [];
+      const { status, title, results } = await scanPage(page, target, {
+        tags,
+        rules,
+        disableRules,
+        includeIncomplete: !!argv['include-incomplete'],
+      });
       const pageRec: PageRecord = {
         url: target,
         status,
@@ -95,14 +123,28 @@ async function main() {
           incomplete: results.incomplete.length,
           passes: results.passes.length,
         },
-        issues: results.violations.map((v: any) => ({
-          id: v.id,
-          impact: v.impact,
-          help: v.help,
-          helpUrl: v.helpUrl,
-          tags: v.tags,
-          nodes: v.nodes.map((n: any) => ({ html: n.html, target: n.target, failureSummary: n.failureSummary })),
-        })),
+        issues: [
+          ...results.violations.map((v: any) => ({
+            kind: 'violation',
+            id: v.id,
+            impact: v.impact,
+            help: v.help,
+            helpUrl: v.helpUrl,
+            tags: v.tags,
+            nodes: v.nodes.map((n: any) => ({ html: n.html, target: n.target, failureSummary: n.failureSummary })),
+          })),
+          ...(argv['include-incomplete']
+            ? results.incomplete.map((v: any) => ({
+                kind: 'incomplete',
+                id: v.id,
+                impact: v.impact,
+                help: v.help,
+                helpUrl: v.helpUrl,
+                tags: v.tags,
+                nodes: v.nodes.map((n: any) => ({ html: n.html, target: n.target, failureSummary: n.failureSummary })),
+              }))
+            : []),
+        ],
       };
       fs.writeFileSync(path.join(pagesDir, `${slug}.json`), JSON.stringify(pageRec, null, 2));
       pageSummaries.push({ url: target, status, slug, violationCount: pageRec.metrics.violations });
@@ -141,6 +183,7 @@ async function main() {
   const totals = {
     pages: pageSummaries.length,
     violations: pageSummaries.reduce((a, p) => a + p.violationCount, 0),
+    // We don’t aggregate incomplete in summary without reading each page file; leave 0 for now.
     incomplete: 0,
   };
   const finishedAt = new Date();
