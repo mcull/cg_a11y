@@ -8,6 +8,7 @@ export type PageIssueNode = {
 };
 
 export type PageIssue = {
+  kind?: 'violation' | 'incomplete';
   id: string; // axe rule id
   impact?: 'minor' | 'moderate' | 'serious' | 'critical';
   help: string;
@@ -74,4 +75,3 @@ export function listRuleIds(scanDir?: string): string[] {
   const data = JSON.parse(fs.readFileSync(p, 'utf-8')) as Record<string, unknown>;
   return Object.keys(data);
 }
-
