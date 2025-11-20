@@ -9,7 +9,9 @@ dist
 .turbo
 
 # Data outputs
-data/scans/
+# Ignore all scan outputs by default, but keep a committed snapshot for the site
+data/scans/**
+!data/scans/snapshot/**
 
 # OS
 .DS_Store
