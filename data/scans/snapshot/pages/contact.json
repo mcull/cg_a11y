@@ -1,0 +1,1098 @@
+{
+  "url": "https://creativegrowth.org/contact",
+  "status": 200,
+  "title": "Contact | Creative Growth Art Center",
+  "timestamp": "2025-11-20T23:40:17.236Z",
+  "metrics": {
+    "violations": 2,
+    "incomplete": 3,
+    "passes": 37
+  },
+  "issues": [
+    {
+      "kind": "violation",
+      "id": "frame-title",
+      "impact": "serious",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "nodes": [
+        {
+          "html": "<iframe allowfullscreen=\"\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" frameborder=\"0\" src=\"https://maps.google.com/maps?hl=en&amp;t=m&amp;output=embed&amp;q=Creative Growth Art Center&amp;z=12\" style=\"height: 100%; width: 100%; position: absolute;\"></iframe>",
+          "target": [
+            "iframe[allowfullscreen=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "kind": "violation",
+      "id": "region",
+      "impact": "moderate",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "nodes": [
+        {
+          "html": "<div class=\"columns__col columns__col--horizontal\" data-block-type=\"columns\" style=\"display:flex;flex:1;min-width:0;position:relative;width:100%;flex-direction:row;max-width:20%;background-color:rgba(255,255,255,1);align-items:center\">",
+          "target": [
+            ".nav--whitelabel--desktop > .nav--content > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#mainContent\" class=\"drop__anch nav--skip__link\" aria-label=\"Skip To Main Content\"></a>",
+          "target": [
+            ".nav--skip__link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">Artists</span></span>",
+          "target": [
+            ".nav__menu__anch.richText:nth-child(5) > .link-default.link-active.button-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">Exhibitions</span></span>",
+          "target": [
+            ".nav__menu__anch.richText:nth-child(6) > .link-default.link-active.button-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">News &amp; Events</span></span>",
+          "target": [
+            ".nav__menu__anch.richText:nth-child(7) > .link-default.link-active.button-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">Visit</span></span>",
+          "target": [
+            ".nav__menu__anch.richText:nth-child(8) > .link-default.link-active.button-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"nav__menu__anch richText\" href=\"https://creativegrowth.org/contact\" style=\"margin-right:30px;display:inline-grid\">",
+          "target": [
+            ".nav__menu__anch.richText:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"button-content link-default link-active p\" style=\"pointer-events:none\"><span style=\"font-size:15px;font-weight:bold;\" token=\"ITEM_TITLE\" data-heading=\"p\">ACCESSIBILITY</span></span>",
+          "target": [
+            ".nav__menu__anch.richText:nth-child(10) > .link-default.link-active.button-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cart__holder cart__holder--desktop\" style=\"margin-left:50px;color:rgba(25,134,57,1);font-size:25px\"><a class=\"cart__btn\" href=\"/buy/\" aria-label=\"Shopping Cart\"><div class=\"ion ion-bag cart__btn--icon\"></div><span class=\"cart__counter\" style=\"display: none;\"></span></a></div>",
+          "target": [
+            ".cart__holder"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"search__holder search__holder--desktop\" style=\"margin-left:20px;margin-right:20px;color:rgba(25,134,57,1);font-size:20px\"><a href=\"#\" aria-label=\"Search\" class=\"search__btn\" style=\"color:inherit\"><div class=\"i i-search search__btn--icon\"></div></a></div>",
+          "target": [
+            ".search__holder--desktop"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"input--whitelabel richText\" style=\"margin-bottom:20px;margin-right:30px;width:100%\">",
+          "target": [
+            ".search--desktop > form > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .input--whitelabel.richText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"columns__col\" data-block-type=\"columns\" style=\"display:flex;flex:1;min-width:45%;position:relative;width:100%;flex-direction:column;max-width:45%;align-items:flex-start\">",
+          "target": [
+            "#mainContent > div > .cont--kit__wrapper:nth-child(1) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"place-desc-large\"> <div jstcache=\"24\" class=\"place-name\" jsan=\"7.place-name\">Creative Growth Art Center</div> <div jstcache=\"25\" class=\"address\" jsan=\"7.address\">355 24th St, Oakland, CA 94612</div> </div>",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            ".place-desc-large"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div aria-label=\"Rated 4.8 out of 5\" role=\"img\" jstcache=\"28\" class=\"rating-stars\" jsan=\"7.rating-stars,0.aria-label,0.role,t-wGQdaJlyFeQ\">",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            ".rating-stars"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a aria-label=\"88 reviews\" target=\"_blank\" jstcache=\"29\" href=\"https://search.googl...\" jsaction=\"mouseup:placeCard.re...\" class=\"review-box-link\" jsan=\"0.aria-label,7.revie...\">",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            ".review-box-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bottom-actions\">",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            ".bottom-actions"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            "div:nth-child(15)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span style=\"\">Map data ©2025 Google</span>",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            ".gmnoprint:nth-child(2) > .gm-style-cc[draggable=\"false\"] > div:nth-child(2) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"gmnoprint gm-style-cc\" draggable=\"false\" style=\"z-index: 1000001; user-select: none; position: relative; height: 14px; line-height: 14px;\">",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            ".gmnoprint.gm-style-cc[draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div draggable=\"false\" class=\"gm-style-cc\" style=\"user-select: none; position: relative; height: 14px; line-height: 14px;\">",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            ".gm-style-cc[draggable=\"false\"]:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
+          "target": [
+            "#mainContent > div > .cont--kit__wrapper:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"richText\" style=\"margin-bottom:60px\"><div><p class=\"h1\"><span data-heading=\"h1\">STUDIO INSTRUCTORS</span></p></div></div>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"columns__col\" data-block-type=\"columns\" style=\"display:flex;flex:1;min-width:45%;position:relative;width:100%;max-width:45%;flex-direction:column;align-items:flex-start\">",
+          "target": [
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"columns__col\" data-block-type=\"columns\" style=\"display:flex;flex:1;min-width:45%;position:relative;width:100%;max-width:45%;flex-direction:column;align-items:flex-start\">",
+          "target": [
+            ".cont--kit__wrapper:nth-child(7) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cont--kit__wrapper\" style=\"margin:0 auto;max-width:75%;width:100%\">",
+          "target": [
+            ".cont--kit__wrapper:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"richText\" style=\"padding-bottom:30px\">",
+          "target": [
+            ".foot--content > .cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"button-content link-default link-active\" style=\"pointer-events:none\"><p class=\"p\" style=\"text-align:center;\"><span style=\"color:rgba(255,255,255,1);font-size:14px;font-weight:bold;\" data-heading=\"p\">DONATE TODAY</span></p></span>",
+          "target": [
+            "a[type=\"desktop\"] > .link-default.link-active.button-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"richText\" style=\"padding-bottom:20px\"><div><p class=\"p\"><span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">FIND US ON SOCIAL MEDIA</span></p></div></div>",
+          "target": [
+            ".foot--content > .cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a aria-label=\"instagram\" href=\"http://instagram.com/creativegrowth\" style=\"align-items:center;display:flex;justify-content:center;height:25px;line-height:25px;width:25px\" target=\"_blank\"><span class=\"i i-inst-2\" style=\"line-height:unset;font-size:25px;color:rgba(40,176,77,1)\"></span></a>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .cont--social > div > .cell--social:nth-child(1) > a[aria-label=\"instagram\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a aria-label=\"facebook\" href=\"https://www.facebook.com/creativegrowthoakland\" style=\"align-items:center;display:flex;justify-content:center;height:25px;line-height:25px;width:25px\" target=\"_blank\"><span class=\"i i-fcbk-2\" style=\"line-height:unset;font-size:25px;color:rgba(40,176,77,1)\"></span></a>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .cont--social > div > .cell--social:nth-child(2) > a[aria-label=\"facebook\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a aria-label=\"youtube\" href=\"https://www.youtube.com/@CreativeGrowth1974\" style=\"align-items:center;display:flex;justify-content:center;height:25px;line-height:25px;width:25px\" target=\"_blank\"><span class=\"i i-youtube-2\" style=\"line-height:unset;font-size:25px;color:rgba(40,176,77,1)\"></span></a>",
+          "target": [
+            "a[aria-label=\"youtube\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a aria-label=\"linkedin\" href=\"https://www.linkedin.com/company/creative-growth-art-center/\" style=\"align-items:center;display:flex;justify-content:center;height:25px;line-height:25px;width:25px\" target=\"_blank\">",
+          "target": [
+            "a[aria-label=\"linkedin\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"richText\" style=\"padding-bottom:20px\"><div><p class=\"p\"><span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">JOIN OUR MAILING LIST</span></p></div></div>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"columns__cont cont--kit__content\" style=\"display:flex\">",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .cont--kit__wrapper > form > .columns__cont.cont--kit__content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"input--whitelabel richText\" style=\"margin-bottom:15px\">",
+          "target": [
+            "form > .input--whitelabel.richText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"foot--whitelabel--copyright foot--whitelabel--copyright--desktop\" style=\"font-size:12px;letter-spacing:1px;text-align:center;text-transform:capitalize;padding-bottom:40px;background-color:rgba(0,0,0,0.057)\">",
+          "target": [
+            ".foot--whitelabel--copyright--desktop"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "kind": "incomplete",
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "nodes": [
+        {
+          "html": "<dialog role=\"none\" data-overlay-outer-wrapper=\"\" open=\"\" style=\"display: none; z-index: 9999; padding: 0px;\">",
+          "target": [
+            [
+              "#Ly2Qwg",
+              "#Ly2Qwg",
+              "givebutter-dialog",
+              "dialog"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role none must be removed when the element is made visible, as it is not allowed for the element"
+        }
+      ]
+    },
+    {
+      "kind": "incomplete",
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "nodes": [
+        {
+          "html": "<div jstcache=\"24\" class=\"place-name\" jsan=\"7.place-name\">Creative Growth Art Center</div>",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            ".place-name"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "html": "<div jstcache=\"25\" class=\"address\" jsan=\"7.address\">355 24th St, Oakland, CA 94612</div>",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            ".address"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "html": "<div aria-hidden=\"true\" jstcache=\"27\" class=\"review-number\" jsan=\"7.review-number,0.aria-hidden\">4.8</div>",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            ".review-number"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "html": "<a aria-label=\"88 reviews\" target=\"_blank\" jstcache=\"29\" href=\"https://search.googl...\" jsaction=\"mouseup:placeCard.re...\" class=\"review-box-link\" jsan=\"0.aria-label,7.revie...\">",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            ".review-box-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "html": "<a aria-label=\"View larger map\" target=\"_blank\" jstcache=\"30\" href=\"https://maps.google.com/maps?ll=37.812984,-122.264191&amp;z=12&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=embed&amp;cid=11091666107092224298\" jsaction=\"mouseup:placeCard.largerMap\">View larger map</a>",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            "a[aria-label=\"View larger map\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "html": "<button draggable=\"false\" aria-label=\"Keyboard shortcuts\" title=\"Keyboard shortcuts\" type=\"button\" style=\"background: none; di...\">",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            "div:nth-child(2) > button[aria-label=\"Keyboard shortcuts\"][title=\"Keyboard shortcuts\"][type=\"button\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "html": "<span style=\"\">Map data ©2025 Google</span>",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            ".gmnoprint:nth-child(2) > .gm-style-cc[draggable=\"false\"] > div:nth-child(2) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "html": "<a target=\"_blank\" rel=\"noopener\" title=\"Report errors in the...\" dir=\"ltr\" href=\"https://www.google.c...\" style=\"font-family: Roboto,...\">",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            "a[dir=\"ltr\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "html": "<span data-heading=\"h1\">ADMINISTRATION</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(3) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(2) > div > .h1 > span[data-heading=\"h1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Executive Director</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(3) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(1) > span[data-heading=\"p\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\"><br>Sunny A. Smith - </span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(3) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(1) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">sunny@creativegrowth.org</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(3) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(1) > a > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Gallery Director </span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(3) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(3) > span[data-heading=\"p\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">x114<br>Nadia Ghani – </span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(3) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(3) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">nadia@creativegrowth.org</span>",
+          "target": [
+            "p:nth-child(3) > a > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Managing Director</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(3) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(5) > span[data-heading=\"p\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\"> x 111<br>Amelia Whittlesey – </span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(3) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(5) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">amelia@creativegrowth.org</span>",
+          "target": [
+            "p:nth-child(5) > a > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Development Director </span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(7) > span[data-heading=\"p\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">x 110<br>Jennifer Cesario - </span>",
+          "target": [
+            ".richText:nth-child(3) > div > p:nth-child(7) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">jen@creativegrowth.org</span>",
+          "target": [
+            "a[href=\"mailto:jen@creativegrowth.org\"] > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\"> or </span>",
+          "target": [
+            "p:nth-child(7) > span[data-heading=\"p\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">grants@creativegrowth.org</span>",
+          "target": [
+            "p:nth-child(7) > a:nth-child(5) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Business Manager</span>",
+          "target": [
+            ".richText:nth-child(3) > div > p:nth-child(9) > span[data-heading=\"p\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:normal;\" data-heading=\"p\"> x 118</span>",
+          "target": [
+            ".richText:nth-child(3) > div > p:nth-child(9) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\"><br>Jo Sullivan - </span>",
+          "target": [
+            "p:nth-child(9) > span[data-heading=\"p\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">josullivan@creativegrowth.org</span>",
+          "target": [
+            "p:nth-child(9) > a > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Fair and Sales Manager</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(11) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Quinn Dukes – </span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(12) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">quinn@creativegrowth.org</span>",
+          "target": [
+            "p:nth-child(12) > a > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">For artwork and sales inquiries – </span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(13) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">gallery@creativegrowth.org</span>",
+          "target": [
+            "p:nth-child(13) > a > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Gallery Manager </span>",
+          "target": [
+            ".richText:nth-child(3) > div > p:nth-child(15) > span[data-heading=\"p\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">(510) 306-4727 x 115</span>",
+          "target": [
+            ".richText:nth-child(3) > div > p:nth-child(15) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Martin Segobia – </span>",
+          "target": [
+            "p:nth-child(15) > span[data-heading=\"p\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">martin@creativegrowth.org</span>",
+          "target": [
+            "p:nth-child(15) > a > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Studio Manager</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(17) > span[data-heading=\"p\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:normal;\" data-heading=\"p\"> x 112</span>",
+          "target": [
+            "p:nth-child(17) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Alina Tully - </span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(18) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">alina@creativegrowth.org</span>",
+          "target": [
+            "p:nth-child(18) > a > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">For art supply donations and studio business </span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText:nth-child(3) > div > p:nth-child(19) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">studio@creativegrowth.org</span>",
+          "target": [
+            "p:nth-child(19) > a > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Volunteer and Events Coordinator</span>",
+          "target": [
+            "p:nth-child(21) > span[data-heading=\"p\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\"><br>Arielle Berrick – </span>",
+          "target": [
+            "p:nth-child(21) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">arielle@creativegrowth.org</span>",
+          "target": [
+            "a[href=\"mailto:emma@creativegrowth.org\"] > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">For all communications, media requests, or collaboration inquiries</span>",
+          "target": [
+            "p:nth-child(23) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Jackie Meng – </span>",
+          "target": [
+            "p:nth-child(24) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">jackie@creativegrowth.org</span>",
+          "target": [
+            "p:nth-child(24) > a > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"h1\">STUDIO INSTRUCTORS</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > .h1 > span[data-heading=\"h1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Madelyn Covey</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(1) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Painting &amp; Drawing; Youth Program Coordinator</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(2) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Amy Keefer</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(3) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Textiles</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(4) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Anne Meade Paden</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(5) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Fiber Arts</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(6) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Julie Plasencia</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(7) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Painting &amp; Drawing</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(8) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Veronica Rojas</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(9) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Painting</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(10) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Adrianna Sorondo</span>",
+          "target": [
+            "p:nth-child(11) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Mixed Media &amp; Ceramics</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(12) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Tara Tucker</span>",
+          "target": [
+            "p:nth-child(13) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Rugs</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(14) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">David Wiley</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(15) > span[data-heading=\"p\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Wood</span>",
+          "target": [
+            ".cont--kit__wrapper:nth-child(5) > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText > div > p:nth-child(16) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"h1\">BOARD MEMBERS</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(2) > div > .h1 > span[data-heading=\"h1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">President</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(3) > div > p:nth-child(1) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Michael Breland</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(3) > div > p:nth-child(2) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Treasurer</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(3) > div > p:nth-child(4) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Sydney Walker</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(3) > div > p:nth-child(5) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Secretary</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(3) > div > p:nth-child(7) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Myeisha Williams</span>",
+          "target": [
+            ".richText:nth-child(3) > div > p:nth-child(8) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Sitting Members</span>",
+          "target": [
+            ".richText:nth-child(3) > div > p:nth-child(10) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Brad Aldridge</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(3) > div > p:nth-child(11) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Charmin Baaqee</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(3) > div > p:nth-child(12) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Erica Tanov</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(3) > div > p:nth-child(13) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Katherine Sherwood</span>",
+          "target": [
+            ".richText:nth-child(3) > div > p:nth-child(14) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"font-weight:bold;\" data-heading=\"p\">Emeritus Members</span>",
+          "target": [
+            ".richText:nth-child(3) > div > p:nth-child(16) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Jane Timberlake</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(3) > div > p:nth-child(17) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Stephen Walrod</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(3) > div > p:nth-child(18) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"p\">Chad Graff</span>",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(3) > div > p:nth-child(19) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"h2\">Photography by </span>",
+          "target": [
+            ".h2 > span[data-heading=\"h2\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span data-heading=\"h2\">Poppy Lynch</span>",
+          "target": [
+            "a[href$=\"poppylynch.com/\"] > span[data-heading=\"h2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">Creative Growth Art Center</span>",
+          "target": [
+            ".foot--content > .cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(1) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">355 24th Street, Oakland, CA 94612&nbsp;</span>",
+          "target": [
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(2) > span[data-heading=\"p\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">510.836.2340 x 115 / </span>",
+          "target": [
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(2) > span[data-heading=\"p\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"color:rgba(40,176,77,1);font-weight:bold;\" data-heading=\"p\">gallery@creativegrowth.org</span>",
+          "target": [
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(2) > span[data-heading=\"p\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">Gallery Hours</span>",
+          "target": [
+            ".foot--content > .cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(3) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">Wednesday - Saturday</span>",
+          "target": [
+            ".cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(4) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"color:rgba(0,0,0,1);\" data-heading=\"p\">10:00 am - 4:00 pm</span>",
+          "target": [
+            ".foot--content > .cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(1) > .richText > div > p:nth-child(5) > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">FIND US ON SOCIAL MEDIA</span>",
+          "target": [
+            ".foot--content > .cont--kit__wrapper > .columns__cont.cont--kit__content > .columns__col[data-block-type=\"columns\"]:nth-child(3) > .richText:nth-child(2) > div > p > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"color:rgba(0,0,0,1);font-weight:bold;\" data-heading=\"p\">JOIN OUR MAILING LIST</span>",
+          "target": [
+            ".richText:nth-child(4) > div > p > span[data-heading=\"p\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"color:rgba(0,0,0,1);font-family:'Roboto';font-size:14px;line-height:26px;vertical-align:middle;\" data-heading=\"h3\">FULL NAME*</span>",
+          "target": [
+            ".columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .input--whitelabel.richText > .input__placeholder.input__placeholder--center > .h3 > span[data-heading=\"h3\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "html": "<input type=\"text\" aria-label=\"Full Name *\" class=\"p\" name=\"Name\" required=\"\" style=\"border-radius:2px;bo...\" value=\"\">",
+          "target": [
+            ".columns__col[data-block-type=\"columns\"]:nth-child(3) > .cont--kit__wrapper > form > .columns__cont.cont--kit__content > .columns__col--horizontal.columns__col[data-block-type=\"columns\"] > .input--whitelabel.richText > input[aria-label=\"Full Name *\"][name=\"Name\"][type=\"text\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span style=\"color:rgba(0,0,0,1);font-family:'Roboto';font-size:14px;line-height:26px;vertical-align:middle;\" data-heading=\"h3\">EMAIL ADDRESS*</span>",
+          "target": [
+            "form > .input--whitelabel.richText > .input__placeholder.input__placeholder--center > .h3 > span[data-heading=\"h3\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "html": "<input type=\"email\" aria-label=\"Email Address *\" class=\"p\" name=\"Email\" required=\"\" style=\"border-radius:2px;bo...\" value=\"\">",
+          "target": [
+            "form > .input--whitelabel.richText > input[type=\"email\"][aria-label=\"Email Address *\"][name=\"Email\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<span class=\"foot--whitelabel--copyright foot--whitelabel--copyright--desktop\" style=\"font-size:12px;letter-spacing:1px;text-align:center;text-transform:capitalize;padding-bottom:40px;background-color:rgba(0,0,0,0.057)\">",
+          "target": [
+            ".foot--whitelabel--copyright--desktop"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "html": "<a href=\"https://artcloud.com/manager-for-galleries?utm_source=a965bd47-f3f9-4fe6-b1cc-e9c4cc9b2b23\" style=\"color:inherit\" target=\"_blank\" rel=\"noreferrer\">Art Gallery Software<!-- --> by ArtCloud</a>",
+          "target": [
+            ".foot--whitelabel--copyright--desktop > a[rel=\"noreferrer\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        }
+      ]
+    },
+    {
+      "kind": "incomplete",
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1",
+        "RGAAv4",
+        "RGAA-10.6.1"
+      ],
+      "nodes": [
+        {
+          "html": "<a href=\"mailto:gallery@creativegrowth.org\"><span data-heading=\"p\">gallery@creativegrowth.org</span></a>",
+          "target": [
+            "p:nth-child(13) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's foreground contrast ratio could not be determined"
+        },
+        {
+          "html": "<a href=\"mailto:studio@creativegrowth.org\"><span data-heading=\"p\">studio@creativegrowth.org</span></a>",
+          "target": [
+            "p:nth-child(19) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's foreground contrast ratio could not be determined"
+        },
+        {
+          "html": "<a href=\"https://www.poppylynch.com/\"><span data-heading=\"h2\">Poppy Lynch</span></a>",
+          "target": [
+            "a[href$=\"poppylynch.com/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        }
+      ]
+    }
+  ]
+}

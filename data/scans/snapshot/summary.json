@@ -1,0 +1,139 @@
+{
+  "scanId": "2025-11-20T23-39-47-815Z",
+  "baseUrl": "https://creativegrowth.org/",
+  "startedAt": "2025-11-20T23:39:47.815Z",
+  "finishedAt": "2025-11-20T23:40:58.082Z",
+  "totals": {
+    "pages": 21,
+    "violations": 52,
+    "incomplete": 0
+  },
+  "pages": [
+    {
+      "url": "https://creativegrowth.org/2024-symposium-resource-guide",
+      "status": 200,
+      "slug": "2024-symposium-resource-guide",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4071978",
+      "status": 200,
+      "slug": "art4071978",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4085911",
+      "status": 200,
+      "slug": "art4085911",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4087514",
+      "status": 200,
+      "slug": "art4087514",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4088737",
+      "status": 200,
+      "slug": "art4088737",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4107042",
+      "status": 200,
+      "slug": "art4107042",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4269242",
+      "status": 200,
+      "slug": "art4269242",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4269324",
+      "status": 200,
+      "slug": "art4269324",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/4662258",
+      "status": 200,
+      "slug": "art4662258",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/jag-292-by-juan-aguilera",
+      "status": 200,
+      "slug": "artjag-292-by-juan-aguilera",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/art/untitled-km-43-by-katherine-miller",
+      "status": 200,
+      "slug": "artuntitled-km-43-by-katherine-miller",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/contact",
+      "status": 200,
+      "slug": "contact",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/enroll",
+      "status": 200,
+      "slug": "enroll",
+      "violationCount": 4
+    },
+    {
+      "url": "https://creativegrowth.org/exhibitions",
+      "status": 200,
+      "slug": "exhibitions",
+      "violationCount": 4
+    },
+    {
+      "url": "https://creativegrowth.org/",
+      "status": 200,
+      "slug": "index",
+      "violationCount": 4
+    },
+    {
+      "url": "https://creativegrowth.org/post/15289-fashion-is-the-sunshine-that-spotlights-everyone",
+      "status": 200,
+      "slug": "post15289-fashion-is-the-sunshine-that-spotlights-everyone",
+      "violationCount": 3
+    },
+    {
+      "url": "https://creativegrowth.org/post/16207-creative-growth-x-6397-featured-in-harpers-bazaar-cultured-and-artnet",
+      "status": 200,
+      "slug": "post16207-creative-growth-x-6397-featured-in-harpers-bazaar-cultured-and-artnet",
+      "violationCount": 3
+    },
+    {
+      "url": "https://creativegrowth.org/sculpture",
+      "status": 200,
+      "slug": "sculpture",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/shop",
+      "status": 200,
+      "slug": "shop",
+      "violationCount": 4
+    },
+    {
+      "url": "https://creativegrowth.org/show/creative-growth-art-center-fashion-is-the-sunshine-that-spotlights-everyone-ii",
+      "status": 200,
+      "slug": "showcreative-growth-art-center-fashion-is-the-sunshine-that-spotlights-everyone-ii",
+      "violationCount": 2
+    },
+    {
+      "url": "https://creativegrowth.org/wall-art",
+      "status": 200,
+      "slug": "wall-art",
+      "violationCount": 2
+    }
+  ]
+}
