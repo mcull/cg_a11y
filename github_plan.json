@@ -1,0 +1,181 @@
+{
+  "labels": [
+    {"name": "a11y", "color": "1f883d", "description": "Accessibility-related work"},
+    {"name": "scanner", "color": "0969da", "description": "Crawler and scanning pipeline"},
+    {"name": "web", "color": "bf3989", "description": "Next.js report site"},
+    {"name": "infra", "color": "7057ff", "description": "Tooling, CI, deployments"},
+    {"name": "docs", "color": "0e8a16", "description": "Documentation updates"},
+    {"name": "good-first-issue", "color": "7057ff", "description": "Beginner-friendly task"},
+    {"name": "help-wanted", "color": "f9d0c4", "description": "Needs assistance or pairing"},
+    {"name": "bug", "color": "d73a4a", "description": "Bug fix"},
+    {"name": "feature", "color": "a2eeef", "description": "Feature work"}
+  ],
+  "milestones": [
+    {
+      "title": "M0 — Project Setup",
+      "description": "Establish repo tooling, CI, docs, and templates.",
+      "issues": [
+        {
+          "title": "Repo tooling: initialize Node, TypeScript, ESLint, Prettier",
+          "labels": ["infra", "docs"],
+          "body": "Setup package manager scripts (build, lint, format). Configure TypeScript, ESLint, Prettier. Acceptance: pnpm or npm scripts exist; type-check and lint succeed."
+        },
+        {
+          "title": "CI: add GitHub Actions for lint and type-check",
+          "labels": ["infra"],
+          "body": "On push/PR, run ESLint and tsc --noEmit. Acceptance: workflow passes on main and PRs."
+        },
+        {
+          "title": "Docs: refine README usage and add CONTRIBUTING",
+          "labels": ["docs"],
+          "body": "Update README with installation and run steps; add CONTRIBUTING with branch/PR guidance."
+        },
+        {
+          "title": "Issue templates and labels",
+          "labels": ["docs", "infra"],
+          "body": "Add feature/bug/chore templates. Create baseline labels: a11y, scanner, web, infra, docs, good-first-issue."
+        }
+      ]
+    },
+    {
+      "title": "M1 — JSON Scanner + Report (Local)",
+      "description": "Local JSON-based scanning and a read-only report site.",
+      "issues": [
+        {
+          "title": "Scanner: basic crawler (same-origin, dedupe, limits)",
+          "labels": ["scanner", "feature"],
+          "body": "Implement BFS crawl with include/exclude patterns, robots.txt respect, and concurrency controls. Acceptance: crawl a subset of creativegrowth.org within configured limits."
+        },
+        {
+          "title": "Scanner: Playwright + axe-core integration",
+          "labels": ["scanner", "a11y", "feature"],
+          "body": "Render pages with Playwright, inject axe-core, collect violations/incomplete/passes. Capture page title and status."
+        },
+        {
+          "title": "Scanner: normalize schema and write JSON artifacts",
+          "labels": ["scanner", "feature"],
+          "body": "Write data/scans/<timestamp>/summary.json and pages/<slug>.json. Include counts, issues with nodes, and metadata."
+        },
+        {
+          "title": "Scanner CLI and config file support",
+          "labels": ["scanner", "feature"],
+          "body": "Add CLI flags (base, max-pages, concurrency, output) and merge with scanner.config.json if present."
+        },
+        {
+          "title": "Sample scan and fixture dataset",
+          "labels": ["scanner", "docs"],
+          "body": "Run a small scan and commit resulting dataset under data/scans/<timestamp>/ for local site consumption."
+        },
+        {
+          "title": "Next.js app scaffold + base layout",
+          "labels": ["web", "feature"],
+          "body": "Scaffold Next.js (App Router, TS) with accessible layout (skip link, keyboard-friendly nav)."
+        },
+        {
+          "title": "Local JSON data loader for report",
+          "labels": ["web", "feature"],
+          "body": "Implement utilities to find latest scan and load summary/pages into server components."
+        },
+        {
+          "title": "Overview page (totals, filters, pages list)",
+          "labels": ["web", "feature", "a11y"],
+          "body": "Render counts by impact, filter controls, and a table/list of pages with violation counts."
+        },
+        {
+          "title": "Page detail view (/pages/[slug])",
+          "labels": ["web", "feature", "a11y"],
+          "body": "Show issues with nodes, selectors, WCAG references, and copy buttons."
+        },
+        {
+          "title": "Rule view MVP (/rules/[ruleId])",
+          "labels": ["web", "feature"],
+          "body": "List affected pages per rule and link to external axe docs."
+        },
+        {
+          "title": "Deploy initial site (local data mode)",
+          "labels": ["infra", "web"],
+          "body": "Deploy to Vercel (or similar). Document how local JSON is bundled/read."
+        }
+      ]
+    },
+    {
+      "title": "M2 — Supabase Persistence + Trends",
+      "description": "Persist scans in Supabase and enable historical comparisons.",
+      "issues": [
+        {
+          "title": "Supabase schema and migration",
+          "labels": ["infra", "feature"],
+          "body": "Create tables: scans, pages, issues, issue_nodes. Add indices and simple FKs."
+        },
+        {
+          "title": "Ingestion: push JSON artifacts to Supabase",
+          "labels": ["infra", "scanner", "feature"],
+          "body": "Script to upsert JSON data into Supabase. Idempotent by scanId+url+rule."
+        },
+        {
+          "title": "Data access layer (Supabase mode)",
+          "labels": ["web", "feature"],
+          "body": "Server-side fetchers that read from Supabase when REPORT_DATA_SOURCE=supabase."
+        },
+        {
+          "title": "Overview: scan selector and trends",
+          "labels": ["web", "feature"],
+          "body": "Allow choosing scans; show deltas in violations/pages between scans."
+        },
+        {
+          "title": "RLS/read-only policies",
+          "labels": ["infra"],
+          "body": "Configure read-only access for report data; keep keys server-side."
+        }
+      ]
+    },
+    {
+      "title": "M3 — Interactions + Screenshots",
+      "description": "Add scripted interactions to expand coverage and optional screenshots.",
+      "issues": [
+        {
+          "title": "Interaction scripts support",
+          "labels": ["scanner", "feature"],
+          "body": "Configurable steps per URL pattern (click, type, wait), with timing controls."
+        },
+        {
+          "title": "Axe rerun after interactions",
+          "labels": ["scanner", "a11y"],
+          "body": "Run axe again after interactions; record phase in output."
+        },
+        {
+          "title": "Screenshot capture and storage",
+          "labels": ["scanner", "feature"],
+          "body": "Capture per-issue or per-state screenshots; stable filenames and linkage to nodes."
+        },
+        {
+          "title": "UI: show screenshots where available",
+          "labels": ["web", "feature", "a11y"],
+          "body": "Display accessible thumbnails and full-size views on issue nodes."
+        }
+      ]
+    },
+    {
+      "title": "M4 — Annotations + Ownership",
+      "description": "Collaborative annotations, status tracking, and exports.",
+      "issues": [
+        {
+          "title": "DB: annotations and status fields",
+          "labels": ["infra", "feature"],
+          "body": "Add columns/tables for note, status (open/ignored/fixed), owner."
+        },
+        {
+          "title": "UI: add/edit annotations",
+          "labels": ["web", "feature"],
+          "body": "Form to add notes and change status/owner; optimistic update."
+        },
+        {
+          "title": "Filters and exports (CSV/JSON)",
+          "labels": ["web", "feature", "docs"],
+          "body": "Filter by owner/status; export current view to CSV/JSON."
+        }
+      ]
+    }
+  ]
+}
+
